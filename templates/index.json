@@ -1,81 +1,66 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
+    "d7332ff7-151d-4bf7-9bca-7fff68486b73": {
+      "type": "index-banner",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "389c4904-39d2-49a1-8233-3dd12f000397": {
+      "type": "index-guess-work",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 28,
-        "padding_bottom": 36
+      }
+    },
+    "9cc57095-68af-4859-9beb-2ff294337d98": {
+      "type": "index-we-believe",
+      "settings": {
+      }
+    },
+    "e73c066e-8d5f-46f4-92fe-3b3f1c13be34": {
+      "type": "index-meet-founder",
+      "settings": {
+      }
+    },
+    "e10abe8f-5856-41b3-b094-ceb9ce120b72": {
+      "type": "index-routine",
+      "settings": {
+      }
+    },
+    "f4aff678-7931-4936-bb15-7ff4333fa2c3": {
+      "type": "index-join",
+      "settings": {
+      }
+    },
+    "16cb2e60-1222-4783-aeb6-96578c24b239": {
+      "type": "index-customer-testimonials",
+      "settings": {
+      }
+    },
+    "3876f598-6ed0-45b2-881e-ba01c0b028fc": {
+      "type": "index-partners",
+      "settings": {
+      }
+    },
+    "d37ced73-9dc6-4df9-977f-797e35da4dea": {
+      "type": "index-doctor-testimonials",
+      "settings": {
+      }
+    },
+    "859ef481-cf31-476f-8fb5-3d985b1b7296": {
+      "type": "index-craft",
+      "settings": {
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "d7332ff7-151d-4bf7-9bca-7fff68486b73",
+    "389c4904-39d2-49a1-8233-3dd12f000397",
+    "9cc57095-68af-4859-9beb-2ff294337d98",
+    "e73c066e-8d5f-46f4-92fe-3b3f1c13be34",
+    "e10abe8f-5856-41b3-b094-ceb9ce120b72",
+    "f4aff678-7931-4936-bb15-7ff4333fa2c3",
+    "16cb2e60-1222-4783-aeb6-96578c24b239",
+    "3876f598-6ed0-45b2-881e-ba01c0b028fc",
+    "d37ced73-9dc6-4df9-977f-797e35da4dea",
+    "859ef481-cf31-476f-8fb5-3d985b1b7296"
   ]
 }
