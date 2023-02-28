@@ -236,6 +236,25 @@
       document.documentElement.classList.add('shopify-design-mode');
     }
     </script>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{{ 'themify-icons.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'owl.carousel.min.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'owl.theme.default.min.css' | asset_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"
+        integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />            
+    <!-- slick slider -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ 'all.css' | asset_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ 'media.css' | asset_url }}">
+
+
   </head>
 
   <body class="gradient">
@@ -293,5 +312,16 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <!-- jQuery Version 3.2.1 -->
+    <script src="{{ 'jquery-3.4.1.js' | asset_url }}" defer></script>
+    <!-- owl slider -->
+    <script src="{{ 'owl.carousel.min.js' | asset_url }}" defer></script>
+    
+    <!-- slick slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer></script>
+    <!-- custom js -->
+    <script src="{{ 'custom.js' | asset_url }}" defer></script>
+
   </body>
 </html>
