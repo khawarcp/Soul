@@ -1484,7 +1484,7 @@ section.team {
 .dream-width:first-child::after {
     position: absolute;
     content: "";
-    background-image: url(../images/line1.png);
+    background-image: url(line1.png);
     width: 66px;
     height: 77px;
     background-size: contain;
@@ -1495,7 +1495,7 @@ section.team {
 .dream-width:nth-child(2)::after {
     position: absolute;
     content: "";
-    background-image: url(../images/line2.png);
+    background-image: url(line2.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 14px;
@@ -1506,7 +1506,7 @@ section.team {
 .dream-width:nth-child(3)::after {
     position: absolute;
     content: "";
-    background-image: url(../images/line3.png);
+    background-image: url(line3.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 79px;
@@ -1541,7 +1541,7 @@ section.team {
 .dream-width2:first-child::after {
     position: absolute;
     content: "";
-    background-image: url(../images/line4.png);
+    background-image: url(line4.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 348px;
@@ -1552,7 +1552,7 @@ section.team {
 .dream-width2:last-child::after {
     position: absolute;
     content: "";
-    background-image: url(../images/line5.png);
+    background-image: url(line5.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 66px;
@@ -1869,14 +1869,14 @@ section.faqs-sec.padding-main {
 .question h5::after {
     position: absolute;
     content: "";
-    background-image: url(../images/plus.png);
+    background-image: url(plus.png);
     width: 52px;
     height: 52px;
     right: 0;
     transition: all ease .3s;
 }
 .question.active h5::after{
-    background-image: url(../images/minus.png);
+    background-image: url(minus.png);
 }
 .faqs-tabing li.tab-link.current {
     background: #023940;
