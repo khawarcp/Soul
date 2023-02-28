@@ -1869,14 +1869,14 @@ section.faqs-sec.padding-main {
 .question h5::after {
     position: absolute;
     content: "";
-    background-image: url(plus.png);
+    background-image: url(plus-img.png);
     width: 52px;
     height: 52px;
     right: 0;
     transition: all ease .3s;
 }
 .question.active h5::after{
-    background-image: url(minus.png);
+    background-image: url(minus-img.png);
 }
 .faqs-tabing li.tab-link.current {
     background: #023940;
