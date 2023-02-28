@@ -19,7 +19,7 @@ $('.banner-slider').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    navText: ["<img src='images/left.png'>","<img src='images/right.png'>"],
+    navText: ["<img alt='left-arrow' src='https://cdn.shopify.com/s/files/1/0729/9370/2193/files/left.png'>","<img alt='right-arrow' src='https://cdn.shopify.com/s/files/1/0729/9370/2193/files/right.png'>"],
     dots:false,
     responsive:{
         0:{
@@ -37,7 +37,7 @@ $('.guess-slider1').owlCarousel({
     loop:true,
     margin:40,
     nav:true,
-    navText: ["<img src='images/left.png'>","<img src='images/right.png'>"],
+    navText: ["<img alt='left-arrow' src='https://cdn.shopify.com/s/files/1/0729/9370/2193/files/left.png'>","<img alt='right-arrow' src='https://cdn.shopify.com/s/files/1/0729/9370/2193/files/right.png'>"],
     dots:false,
     responsive:{
         0:{
@@ -58,7 +58,7 @@ $('.meet-slider').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    navText: ["<img src='images/left.png'>","<img src='images/right.png'>"],
+    navText: ["<img alt='left-arrow' src='https://cdn.shopify.com/s/files/1/0729/9370/2193/files/left.png'>","<img alt='right-arrow' src='https://cdn.shopify.com/s/files/1/0729/9370/2193/files/right.png'>"],
     dots:false,
     responsive:{
         0:{
@@ -77,7 +77,7 @@ $('.routine-slider').owlCarousel({
     margin:10,
     nav:true,
     dots:false,
-    navText: ["<img src='images/left.png'>","<img src='images/right.png'>"],
+    navText: ["<img alt='left-arrow' src='https://cdn.shopify.com/s/files/1/0729/9370/2193/files/left.png'>","<img alt='right-arrow' src='https://cdn.shopify.com/s/files/1/0729/9370/2193/files/right.png'>"],
     responsive:{
         0:{
             items:1
@@ -95,7 +95,7 @@ $('.join-slider').owlCarousel({
     margin:10,
     nav:true,
     dots:false,
-    navText: ["<img src='images/left.png'>","<img src='images/right.png'>"],
+    navText: ["<img alt='left-arrow' src='https://cdn.shopify.com/s/files/1/0729/9370/2193/files/left.png'>","<img alt='right-arrow' src='https://cdn.shopify.com/s/files/1/0729/9370/2193/files/right.png'>"],
     responsive:{
         0:{
             items:1
@@ -139,9 +139,7 @@ $('.member-slider').owlCarousel({
     margin:10,
     nav:false,
     autoplay:true,
-    autoplayTimeout:3000,
-    // animateOut: 'slideOutDown',
-    // animateIn: 'flipInX',
+    autoplayTimeout:3000,    
     smartSpeed:450,
     dots:false,
     arrow:false,
