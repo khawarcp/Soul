@@ -2,6 +2,51 @@
   "sections": {
     "d7332ff7-151d-4bf7-9bca-7fff68486b73": {
       "type": "index-banner",
+      "blocks": {
+        "3aa84715-2839-4469-a8fc-1cb9b57fcab9": {
+          "type": "slide",
+          "settings": {
+            "heading": "Wellness\nNever Tasted\nSo Good.",
+            "subheading": "Yummy gummies. Tasty tinctures. Your delicious relief is waiting.",
+            "button_text": "Taste Your Relief",
+            "button_url": "",
+            "image": "shopify:\/\/shop_images\/home-banner.png"
+          }
+        },
+        "eadde67d-0843-41ce-9f70-bdceab9fa926": {
+          "type": "slide",
+          "settings": {
+            "heading": "",
+            "subheading": "",
+            "button_text": "Taste Your Relief",
+            "button_url": ""
+          }
+        },
+        "6ff6f14e-a543-4fad-9b8c-de3e4487f37f": {
+          "type": "slide",
+          "settings": {
+            "heading": "",
+            "subheading": "",
+            "button_text": "Taste Your Relief",
+            "button_url": ""
+          }
+        },
+        "8642a8a3-a32c-428e-9334-435905977636": {
+          "type": "slide",
+          "settings": {
+            "heading": "",
+            "subheading": "",
+            "button_text": "Taste Your Relief",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "3aa84715-2839-4469-a8fc-1cb9b57fcab9",
+        "eadde67d-0843-41ce-9f70-bdceab9fa926",
+        "6ff6f14e-a543-4fad-9b8c-de3e4487f37f",
+        "8642a8a3-a32c-428e-9334-435905977636"
+      ],
       "settings": {
       }
     },
