@@ -1,65 +1,22 @@
 <section class="home-banner">
   <div class="owl-carousel banner-slider owl-theme">
-    <div class="item">
-      <div class="inner-slider" style="background-image: url(images/home-banner.png);">
-        <div class="container">
-          <div class="heading">
-            <h1>Wellness<br>
-              Never Tasted<br>
-              So Good.
-            </h1>
-            <p>Yummy gummies. Tasty tinctures. Your delicious relief is waiting.</p>
-            <a class="primary-btn2" href="#">Taste Your Relief
-            </a>
+    {% for block in section.blocks %}
+      {% if block.settings.image != blank %}
+        <div class="item">
+          <div class="inner-slider" loading="lazy" style="background-image: url({{ block.settings.image | image_url: width: block.settings.image.width }});">
+            <div class="container">
+              <div class="heading">
+                <h1> {{ block.settings.heading | newline_to_br }} </h1>
+                <p> {{ block.settings.subheading }} </p>
+                {% if block.settings.button_text != blank %}
+                  <a class="primary-btn2" href="{{ block.settings.button_url }}"> {{ block.settings.button_text }} </a>                  
+                {% endif %}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="inner-slider" style="background-image: url(images/home-banner.png);">
-        <div class="container">
-          <div class="heading">
-            <h1>Wellness<br>
-              Never Tasted<br>
-              So Good.
-            </h1>
-            <p>Yummy gummies. Tasty tinctures. Your delicious relief is waiting.</p>
-            <a href="#">Taste Your Relief
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="inner-slider" style="background-image: url(images/home-banner.png);">
-        <div class="container">
-          <div class="heading">
-            <h1>Wellness<br>
-              Never Tasted<br>
-              So Good.
-            </h1>
-            <p>Yummy gummies. Tasty tinctures. Your delicious relief is waiting.</p>
-            <a href="#">Taste Your Relief
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="inner-slider" style="background-image: url(images/home-banner.png);">
-        <div class="container">
-          <div class="heading">
-            <h1>Wellness<br>
-              Never Tasted<br>
-              So Good.
-            </h1>
-            <p>Yummy gummies. Tasty tinctures. Your delicious relief is waiting.</p>
-            <a href="#">Taste Your Relief
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+      {% endif %}
+    {% endfor %}
   </div>
 </section>
 
@@ -67,6 +24,40 @@
   {
     "name": "Banner",
     "settings": [],
+    "blocks": [
+      {
+        "name": "Slide",
+        "type": "slide",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "heading",
+            "label": "Heading" 
+          },
+          {
+            "type": "textarea",
+            "id": "subheading",
+            "label": "Subheading" 
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Taste Your Relief"
+          },
+          {
+            "type": "url",
+            "id": "button_url",
+            "label": "Button Link" 
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image" 
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "Banner"
