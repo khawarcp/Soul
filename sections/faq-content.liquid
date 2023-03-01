@@ -2,25 +2,16 @@
     <div class="container">
         <div class="faqs-tabing">
             <ul class="tabs">
-                {% for block in section.blocks %}                
-                    {% case block.type %}
-                        {% when 'product' %}
-                            <li class="tab-link current" data-tab="tab-1">Product</li>                        
-                        {% when 'shipping' %}
-                            <li class="tab-link current" data-tab="tab-1">Shipping</li>                        
-                        {% when 'memberships' %}
-                            <li class="tab-link current" data-tab="tab-1">Memberships</li>                        
-                        {% when 'orders' %}
-                            <li class="tab-link current" data-tab="tab-1">Orders</li>                        
-                        {% when 'general' %}
-                            <li class="tab-link current" data-tab="tab-1">General</li>                                                
-                    {% endcase %}
-                {% endfor %}
+                <li class="tab-link current" data-tab="tab-1">Product</li>
+                <li class="tab-link" data-tab="tab-2">Shipping</li>
+                <li class="tab-link" data-tab="tab-3">Memberships</li>
+                <li class="tab-link" data-tab="tab-4">Orders</li>
+                <li class="tab-link" data-tab="tab-5">General</li>
             </ul>
-            {% for block in section.blocks %}                
-                {% case block.type %}
-                    {% when 'product' %}
-                        <div id="tab-1" class="tab-content current">
+            <div id="tab-1" class="tab-content current">
+                {% for block in section.blocks %}
+                    {% if block.type == 'product' %}
+                        {% if block.settings.quiz != blank %}
                             <div class="faqs">
                                 <div class="question">
                                     <h5> {{ block.settings.quiz }} </h5>
@@ -29,31 +20,14 @@
                                     <p> {{ block.settings.answer }} </p>
                                 </div>
                             </div>
-                        </div>
-                    {% when 'shipping' %}
-                        <div id="tab-2" class="tab-content">
-                            <div class="faqs">
-                                <div class="question">
-                                    <h5> {{ block.settings.quiz }} </h5>
-                                </div>
-                                <div class="answer">
-                                    <p> {{ block.settings.answer }} </p>
-                                </div>
-                            </div>                           
-                        </div>                       
-                    {% when 'memberships' %}
-                        <div id="tab-3" class="tab-content">
-                            <div class="faqs">
-                                <div class="question">
-                                    <h5> {{ block.settings.quiz }} </h5>
-                                </div>
-                                <div class="answer">
-                                    <p> {{ block.settings.answer }} </p>
-                                </div>
-                            </div>
-                        </div>
-                    {% when 'orders' %}
-                        <div id="tab-4" class="tab-content">
+                       {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div id="tab-2" class="tab-content">
+                {% for block in section.blocks %}
+                    {% if block.type == 'shipping' %}
+                        {% if block.settings.quiz != blank %}
                             <div class="faqs">
                                 <div class="question">
                                     <h5> {{ block.settings.quiz }} </h5>
@@ -62,9 +36,14 @@
                                     <p> {{ block.settings.answer }} </p>
                                 </div>
                             </div>
-                        </div>
-                    {% when 'general' %}
-                        <div id="tab-5" class="tab-content">
+                       {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div id="tab-3" class="tab-content">
+                {% for block in section.blocks %}
+                    {% if block.type == 'memberships' %}
+                        {% if block.settings.quiz != blank %}
                             <div class="faqs">
                                 <div class="question">
                                     <h5> {{ block.settings.quiz }} </h5>
@@ -73,9 +52,42 @@
                                     <p> {{ block.settings.answer }} </p>
                                 </div>
                             </div>
-                        </div>                                          
-                {% endcase %}
-            {% endfor %}                
+                       {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div id="tab-4" class="tab-content">
+                {% for block in section.blocks %}
+                    {% if block.type == 'orders' %}
+                        {% if block.settings.quiz != blank %}
+                            <div class="faqs">
+                                <div class="question">
+                                    <h5> {{ block.settings.quiz }} </h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ block.settings.answer }} </p>
+                                </div>
+                            </div>
+                       {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div id="tab-5" class="tab-content">
+                {% for block in section.blocks %}
+                    {% if block.type == 'general' %}
+                        {% if block.settings.quiz != blank %}
+                            <div class="faqs">
+                                <div class="question">
+                                    <h5> {{ block.settings.quiz }} </h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ block.settings.answer }} </p>
+                                </div>
+                            </div>
+                       {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>            
         </div>
     
     </div>
