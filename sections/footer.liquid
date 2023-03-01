@@ -43,7 +43,7 @@
                             <ul>
                                 {%- for link in block.settings.menu.links -%}
                                 <li>
-                                    <a href="{{ link.url }}" title="{{ link.title }}" class="link {% if link.active %} list-menu__item--active{% endif %}">
+                                    <a href="{{ link.url }}" title="{{ link.title }}" class="{% if link.active %} list-menu__item--active{% endif %}">
                                     {{ link.title }}
                                     </a>
                                 </li>
@@ -70,9 +70,6 @@
                           {%- endif -%}
                           {%- if settings.brand_description != blank -%}
                             <div class="rte">{{ settings.brand_description }}</div>
-                          {%- endif -%}
-                          {%- if block.settings.show_social and has_social_icons -%}
-                            {%- render 'social-icons' -%}
                           {%- endif -%}
                         </div>
                       {%- when 'image' -%}
