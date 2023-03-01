@@ -526,6 +526,8 @@
     "859ef481-cf31-476f-8fb5-3d985b1b7296": {
       "type": "index-craft",
       "settings": {
+        "heading": "We craft our emails\njust like our products. \nOnly the good stuff.",
+        "image": "shopify:\/\/shop_images\/craft.png"
       }
     }
   },
