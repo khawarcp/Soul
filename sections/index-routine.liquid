@@ -5,60 +5,36 @@
       <p> {{ section.settings.text }} </p>      
       {% if section.settings.button_text != blank %}
         <div class="primary-btn">
-          <a href="{{ section.settings.button_url | default: '#'  }}" title="{{ section.settings.button_text }}"> {{ section.settings.button_text_1 }} </a>
+          <a href="{{ section.settings.button_url | default: '#'  }}" title="{{ section.settings.button_text }}"> {{ section.settings.button_text }} </a>
         </div>      
       {% endif %}
     </div>
     <div class="inner-routine">
       <div class="owl-carousel routine-slider owl-theme">
+        {% for block in section.blocks %}
         <div class="item">
           <div class="routine-inner">
             <div class="routine-imgs">
-              <img src="images/routine-img.png">
+              {% render 'image-card', image: block.settings.image, lazy_load: true %}
             </div>
             <div class="routine-content">
-              <h3>Susie’s Plan
-              </h3>
-              <span>Nurse</span>
-              <p>Susie works long hours, does yoga to decompress, and needs help unwinding after a 12 hour shift.
-              </p>
+              <h3> {{ block.settings.name }} </h3>
+              <span>  {{ block.settings.post }} </span>
+              <p> {{ block.settings.comment }} </p>                        
               <div class="list-routine">
                 <ul>
-                  <li><img src="images/icon1.png">Alert Capsules
-                  </li>
-                  <li><img src="images/icon2.png">Harmoni Gummies
-                  </li>
-                  <li><img src="images/icon2.png">Sleepi Gummies
-                  </li>
+                    <li><img src="{{ 'icon1.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_1 }}  </li>
+                    <li><img src="{{ 'icon2.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_2 }}  </li>
+                    <li><img src="{{ 'icon2.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_3 }}  </li>
+                    <li><img src="{{ 'icon1.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_4 }}  </li>
+                    <li><img src="{{ 'icon2.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_5 }}  </li>
+                    <li><img src="{{ 'icon2.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_6 }}  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="item">
-          <div class="routine-inner">
-            <div class="routine-imgs">
-              <img src="images/routine-img.png">
-            </div>
-            <div class="routine-content">
-              <h3>Susie’s Plan
-              </h3>
-              <span>Nurse</span>
-              <p>Susie works long hours, does yoga to decompress, and needs help unwinding after a 12 hour shift.
-              </p>
-              <div class="list-routine">
-                <ul>
-                  <li><img src="images/icon1.png">Alert Capsules
-                  </li>
-                  <li><img src="images/icon2.png">Harmoni Gummies
-                  </li>
-                  <li><img src="images/icon2.png">Sleepi Gummies
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      {% endfor %}
       </div>
     </div>
   </div>
@@ -113,7 +89,7 @@
           {
             "type": "image_picker",
             "id": "image",
-            "label": "Background Image"
+            "label": "Image"
           },{
             "type": "header",
             "content": "Routine list"
