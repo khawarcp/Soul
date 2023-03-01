@@ -51,45 +51,7 @@
                             </ul>
                         </div>
                     </div>
-                    {%- endif -%}
-                    {%- when 'brand_information' -%}
-                        <div class="footer-block__brand-info">
-                          {%- if settings.brand_image != blank -%}
-                            {%- assign brand_image_height = settings.brand_image_width | divided_by: settings.brand_image.aspect_ratio -%}
-                            <div class="footer-block__image-wrapper global-media-settings" style="max-width: min(100%, {{ settings.brand_image_width }}px);">
-                              {{ settings.brand_image | image_url: width: 1100 | image_tag:
-                                loading: 'lazy',
-                                widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
-                                height: brand_image_height,
-                                width: settings.brand_image_width
-                              }}
-                            </div>
-                          {%- endif -%}
-                          {%- if settings.brand_headline != blank -%}
-                            <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
-                          {%- endif -%}
-                          {%- if settings.brand_description != blank -%}
-                            <div class="rte">{{ settings.brand_description }}</div>
-                          {%- endif -%}
-                        </div>
-                      {%- when 'image' -%}
-                        <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
-                          {%- if block.settings.image != blank -%}
-                            {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
-                            <div class="footer-block__image-wrapper global-media-settings"  style="max-width: min(100%, {{ block.settings.image_width }}px);">
-                              <img
-                                srcset= "{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
-                                src="{{ block.settings.image | image_url: width: 760 }}"
-                                alt="{{ block.settings.image.alt | escape }}"
-                                loading="lazy"
-                                width="{{ block.settings.image.width }}"
-                                height="{{ block.settings.image.height }}"
-                              >
-                            </div>
-                          {%- else -%}
-                            {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                          {%- endif -%}
-                        </div> 
+                    {%- endif -%}                   
                    {%- when 'fda' -%}      
                     {% if block.settings.fda_text != blank %}                        
                     <div class="nav-width1">
@@ -295,27 +257,6 @@
           ]
         },
         {
-          "type": "brand_information",
-          "name": "t:sections.footer.blocks.brand_information.name",
-          "settings": [
-            {
-              "type": "paragraph",
-              "content": "t:sections.footer.blocks.brand_information.settings.paragraph.content"
-            },
-            {
-              "type": "header",
-              "content": "t:sections.footer.blocks.brand_information.settings.header__1.content"
-            },
-            {
-              "type": "checkbox",
-              "id": "show_social",
-              "default": true,
-              "label": "t:sections.footer.blocks.brand_information.settings.show_social.label",
-              "info": "t:sections.footer.blocks.brand_information.settings.show_social.info"
-            }
-          ]
-        },
-        {
           "type": "text",
           "name": "t:sections.footer.blocks.text.name",
           "settings": [
@@ -336,6 +277,7 @@
         {
             "type": "fda",
             "name": "FDA Text",
+            "limit": 1,
             "settings": [
                 {
                     "type": "inline_richtext",
@@ -343,47 +285,6 @@
                     "label": "Text"
                 }
             ]
-        },
-        {
-          "type": "image",
-          "name": "Image",
-          "settings": [
-            {
-              "type": "image_picker",
-              "id": "image",
-              "label": "Image"
-            },
-            {
-              "type": "range",
-              "id": "image_width",
-              "min": 50,
-              "max": 550,
-              "step": 5,
-              "unit": "px",
-              "label": "Image width",
-              "default": 100
-            },
-            {
-              "type": "select",
-              "id": "alignment",
-              "label": "Image alignment on large screen",
-              "options": [
-                {
-                  "value": "",
-                  "label": "Left"
-                },
-                {
-                  "value": "center",
-                  "label": "Center"
-                },
-                {
-                  "value": "right",
-                  "label": "Right"
-                }
-              ],
-              "default": "center"
-            }
-          ]
         }
       ],
       "settings": [   
@@ -426,7 +327,7 @@
               "default": "#tasteyourrelief"
             },
             {
-              "type": "text",
+              "type": "url",
               "id": "social_link",              
               "label": "Social Link"
             },
