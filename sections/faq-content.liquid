@@ -1,115 +1,171 @@
 <section class="faqs-sec padding-main">
     <div class="container">
         <div class="faqs-tabing">
-        <ul class="tabs">
-            <li class="tab-link current" data-tab="tab-1">Product</li>
-            <li class="tab-link" data-tab="tab-2">Shipping</li>
-            <li class="tab-link" data-tab="tab-3">Memberships</li>
-            <li class="tab-link" data-tab="tab-4">Orders</li>
-            <li class="tab-link" data-tab="tab-5">General</li>
-        </ul>
-    
-        <div id="tab-1" class="tab-content current">
-            <div class="faqs">
-                <div class="question">
-                    <h5>Where do you ship?
-                    </h5>
-                </div>
-                <div class="answer">
-                    <p>Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout. </p>
-                </div>
-            </div>
-            <div class="faqs">
-                <div class="question">
-                    <h5>How much is shipping?
-                    </h5>
-                </div>
-                <div class="answer">
-                    <p>Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout. </p>
-                </div>
-            </div>
-        </div>
-        <div id="tab-2" class="tab-content">
-            <div class="faqs">
-                <div class="question">
-                    <h5>How much is shipping?
-                    </h5>
-                </div>
-                <div class="answer">
-                    <p>Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout. </p>
-                </div>
-            </div>
-            <div class="faqs">
-                <div class="question">
-                    <h5>Where do you ship?
-                    </h5>
-                </div>
-                <div class="answer">
-                    <p>Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout. </p>
-                </div>
-            </div>
-        </div>
-        <div id="tab-3" class="tab-content">
-            <div class="faqs">
-                <div class="question">
-                    <h5>How much is shipping?
-                    </h5>
-                </div>
-                <div class="answer">
-                    <p>Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout. </p>
-                </div>
-            </div>
-            <div class="faqs">
-                <div class="question">
-                    <h5>Where do you ship?
-                    </h5>
-                </div>
-                <div class="answer">
-                    <p>Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout. </p>
-                </div>
-            </div>
-        </div>
-        <div id="tab-4" class="tab-content">
-            <div class="faqs">
-                <div class="question">
-                    <h5>How much is shipping?
-                    </h5>
-                </div>
-                <div class="answer">
-                    <p>Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout. </p>
-                </div>
-            </div>
-            <div class="faqs">
-                <div class="question">
-                    <h5>Where do you ship?
-                    </h5>
-                </div>
-                <div class="answer">
-                    <p>Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout. </p>
-                </div>
-            </div>
-        </div>
-        <div id="tab-5" class="tab-content">
-            <div class="faqs">
-                <div class="question">
-                    <h5>How much is shipping?
-                    </h5>
-                </div>
-                <div class="answer">
-                    <p>Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout. </p>
-                </div>
-            </div>
-            <div class="faqs">
-                <div class="question">
-                    <h5>Where do you ship?
-                    </h5>
-                </div>
-                <div class="answer">
-                    <p>Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout. </p>
-                </div>
-            </div>
-        </div>
+            <ul class="tabs">
+                {% for block in section.blocks %}                
+                    {% case block.type %}
+                        {% when 'product' %}
+                            <li class="tab-link current" data-tab="tab-1">Product</li>                        
+                        {% when 'shipping' %}
+                            <li class="tab-link current" data-tab="tab-1">Shipping</li>                        
+                        {% when 'memberships' %}
+                            <li class="tab-link current" data-tab="tab-1">Memberships</li>                        
+                        {% when 'orders' %}
+                            <li class="tab-link current" data-tab="tab-1">Orders</li>                        
+                        {% when 'general' %}
+                            <li class="tab-link current" data-tab="tab-1">General</li>                                                
+                    {% endcase %}
+                {% endfor %}
+            </ul>
+            {% for block in section.blocks %}                
+                {% case block.type %}
+                    {% when 'product' %}
+                        <div id="tab-1" class="tab-content current">
+                            <div class="faqs">
+                                <div class="question">
+                                    <h5> {{ block.settings.quiz }} </h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ block.settings.answer }} </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% when 'shipping' %}
+                        <div id="tab-2" class="tab-content">
+                            <div class="faqs">
+                                <div class="question">
+                                    <h5> {{ block.settings.quiz }} </h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ block.settings.answer }} </p>
+                                </div>
+                            </div>                           
+                        </div>                       
+                    {% when 'memberships' %}
+                        <div id="tab-3" class="tab-content">
+                            <div class="faqs">
+                                <div class="question">
+                                    <h5> {{ block.settings.quiz }} </h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ block.settings.answer }} </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% when 'orders' %}
+                        <div id="tab-4" class="tab-content">
+                            <div class="faqs">
+                                <div class="question">
+                                    <h5> {{ block.settings.quiz }} </h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ block.settings.answer }} </p>
+                                </div>
+                            </div>
+                        </div>
+                    {% when 'general' %}
+                        <div id="tab-5" class="tab-content">
+                            <div class="faqs">
+                                <div class="question">
+                                    <h5> {{ block.settings.quiz }} </h5>
+                                </div>
+                                <div class="answer">
+                                    <p> {{ block.settings.answer }} </p>
+                                </div>
+                            </div>
+                        </div>                                          
+                {% endcase %}
+            {% endfor %}                
         </div>
     
     </div>
 </section>
+
+{% schema %}
+    {
+        "name": "FAQs",
+        "settings": [],
+        "blocks": [
+            {
+                "type": "product",
+                "name": "Product",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "quiz",
+                        "label": "Question"
+                    },
+                    {
+                        "type": "inline_richtext",
+                        "id": "answer",
+                        "label": "Answer"
+                    }
+                ]
+            },
+            {
+                "type": "shipping",
+                "name": "Shipping",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "quiz",
+                        "label": "Question"
+                    },
+                    {
+                        "type": "inline_richtext",
+                        "id": "answer",
+                        "label": "Answer"
+                    }
+                ]
+            },
+            {
+                "type": "memberships",
+                "name": "Memberships",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "quiz",
+                        "label": "Question"
+                    },
+                    {
+                        "type": "inline_richtext",
+                        "id": "answer",
+                        "label": "Answer"
+                    }
+                ]
+            },
+            {
+                "type": "orders",
+                "name": "Orders",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "quiz",
+                        "label": "Question"
+                    },
+                    {
+                        "type": "inline_richtext",
+                        "id": "answer",
+                        "label": "Answer"
+                    }
+                ]
+            },
+            {
+                "type": "general",
+                "name": "General",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "quiz",
+                        "label": "Question"
+                    },
+                    {
+                        "type": "inline_richtext",
+                        "id": "answer",
+                        "label": "Answer"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}

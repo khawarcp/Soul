@@ -1,13 +1,32 @@
-<section
-  class="blogs-banner"
-  style="background-image: url(images/faqs-banner.png);">
-  <div
-    class="container">
-    <div
-      class="blogs-inner">
-      <h1>We’ve Got<br>
-        Answers
+<section class="blogs-banner" loading="lazy" style="background-image: url({{ section.settings.image | image_url: section.settings.image.width }});">
+  <div class="container">
+    <div class="blogs-inner">
+      <h1>
+        {{ section.settings.heading | newline_to_br }}
       </h1>
     </div>
   </div>
 </section>
+
+{% schema %}
+    {
+        "name" : "Banner",
+        "settings": [
+            {
+                "type": "textarea",
+                "id": "heading",
+                "label": "Heading"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Page Banner"
+            }
+        ]
+    }
+{% endschema %}
