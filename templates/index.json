@@ -300,7 +300,56 @@
     },
     "f4aff678-7931-4936-bb15-7ff4333fa2c3": {
       "type": "index-join",
+      "blocks": {
+        "dbad90c2-7cf1-46c1-8890-f112370bae62": {
+          "type": "item",
+          "settings": {
+            "text": "15% Off\nEvery Order",
+            "image": "shopify:\/\/shop_images\/join1.png"
+          }
+        },
+        "a5eaade6-d7c5-44ef-884b-c94c7d9b2d90": {
+          "type": "item",
+          "settings": {
+            "text": "Sale\nBoosters",
+            "image": "shopify:\/\/shop_images\/join2.png"
+          }
+        },
+        "ef4c9a33-51a5-43da-8488-de6d65355c20": {
+          "type": "item",
+          "settings": {
+            "text": "Free Shipping\nOn All Orders",
+            "image": "shopify:\/\/shop_images\/join3.png"
+          }
+        },
+        "d675d628-7a09-4c77-b3ec-529f6e17ce75": {
+          "type": "item",
+          "settings": {
+            "text": "15% Off\nEvery Order",
+            "image": "shopify:\/\/shop_images\/join1.png"
+          }
+        },
+        "732a6d56-6621-4aad-8206-bee452b5c149": {
+          "type": "item",
+          "settings": {
+            "text": "Sale\nBoosters",
+            "image": "shopify:\/\/shop_images\/join2.png"
+          }
+        }
+      },
+      "block_order": [
+        "dbad90c2-7cf1-46c1-8890-f112370bae62",
+        "a5eaade6-d7c5-44ef-884b-c94c7d9b2d90",
+        "ef4c9a33-51a5-43da-8488-de6d65355c20",
+        "d675d628-7a09-4c77-b3ec-529f6e17ce75",
+        "732a6d56-6621-4aad-8206-bee452b5c149"
+      ],
       "settings": {
+        "heading": "Join the inner circle.",
+        "text": "Subscribe to any product for instant access to your Soul Inner Circle Membership. No commitment, completely free, with savings and perks that make it easier than ever to (exhale) feel your best.",
+        "button_text": "Get Started",
+        "button_url": "",
+        "image": "shopify:\/\/shop_images\/join.png"
       }
     },
     "16cb2e60-1222-4783-aeb6-96578c24b239": {
