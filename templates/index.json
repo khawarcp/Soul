@@ -128,7 +128,85 @@
     },
     "9cc57095-68af-4859-9beb-2ff294337d98": {
       "type": "index-we-believe",
+      "blocks": {
+        "2f2beb74-737f-4eea-8cc3-96785903aa77": {
+          "type": "item",
+          "settings": {
+            "heading": "Wellness Should Taste Delicious.",
+            "inner_heading": "Wellness never tasted so good.",
+            "text": "We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.",
+            "button_text": "Learn More",
+            "button_url": "",
+            "quote": "\"It's like a treat for your tastebuds and your mind.\" - Amy C."
+          }
+        },
+        "0bdbdf42-ea09-460a-b5fe-cde92bced0b4": {
+          "type": "item",
+          "settings": {
+            "heading": "If It Doesn’t Work, It’s Just Candy.",
+            "inner_heading": "If It Doesn’t Work, It’s Just Candy.",
+            "text": "We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.",
+            "button_text": "Learn More",
+            "button_url": "",
+            "quote": "\"It's like a treat for your tastebuds and your mind.\" - Amy C."
+          }
+        },
+        "519966a0-0eec-4bf8-81e9-ccb9ad204c9f": {
+          "type": "item",
+          "settings": {
+            "heading": "No artificial ingredients. All the good stuff.",
+            "inner_heading": "No artificial ingredients. All the good stuff.",
+            "text": "We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.",
+            "button_text": "Learn More",
+            "button_url": "",
+            "quote": "\"It's like a treat for your tastebuds and your mind.\" - Amy C."
+          }
+        },
+        "e6c33c2c-a55c-4af1-82d4-def528c3f213": {
+          "type": "item",
+          "settings": {
+            "heading": "It’s probably best to have an expert on your team",
+            "inner_heading": "It’s probably best to have an expert on your team",
+            "text": "We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.",
+            "button_text": "Learn More",
+            "button_url": "",
+            "quote": "\"It's like a treat for your tastebuds and your mind.\" - Amy C."
+          }
+        },
+        "67b914c1-72b1-425c-8c68-ca1c56a61160": {
+          "type": "item",
+          "settings": {
+            "heading": "Wellness products should be backed by science.",
+            "inner_heading": "Wellness products should be backed by science.",
+            "text": "We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.",
+            "button_text": "Learn More",
+            "button_url": "",
+            "quote": "\"It's like a treat for your tastebuds and your mind.\" - Amy C."
+          }
+        },
+        "6ad2ad94-efdf-484d-a1f9-325cab7aa005": {
+          "type": "item",
+          "settings": {
+            "heading": "Products should be triple tested.",
+            "inner_heading": "Products should be triple tested.",
+            "text": "We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.",
+            "button_text": "Learn More",
+            "button_url": "",
+            "quote": "\"It's like a treat for your tastebuds and your mind.\" - Amy C."
+          }
+        }
+      },
+      "block_order": [
+        "2f2beb74-737f-4eea-8cc3-96785903aa77",
+        "0bdbdf42-ea09-460a-b5fe-cde92bced0b4",
+        "519966a0-0eec-4bf8-81e9-ccb9ad204c9f",
+        "e6c33c2c-a55c-4af1-82d4-def528c3f213",
+        "67b914c1-72b1-425c-8c68-ca1c56a61160",
+        "6ad2ad94-efdf-484d-a1f9-325cab7aa005"
+      ],
       "settings": {
+        "heading": "We Believe",
+        "background_image": "shopify:\/\/shop_images\/we-banner_1.png"
       }
     },
     "e73c066e-8d5f-46f4-92fe-3b3f1c13be34": {
