@@ -1,12 +1,13 @@
 <section class="routine padding-main">
   <div class="container">
     <div class="heading">
-      <h2>A Routine Tailored to You.</h2>
-      <p>Our personalized quiz will help you create your perfect wellness routine to get you feeling like you again.
-      </p>
-      <div class="primary-btn">
-        <a href="#">Find Your Routine</a>
-      </div>
+      <h2> {{ section.settings.heading }} </h2>
+      <p> {{ section.settings.text }} </p>      
+      {% if section.settings.button_text != blank %}
+        <div class="primary-btn">
+          <a href="{{ section.settings.button_url | default: '#'  }}" title="{{ section.settings.button_text }}"> {{ section.settings.button_text_1 }} </a>
+        </div>      
+      {% endif %}
     </div>
     <div class="inner-routine">
       <div class="owl-carousel routine-slider owl-theme">
@@ -66,7 +67,84 @@
 {% schema %}
   {
     "name": "Routine",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading" 
+      },
+      {
+        "type": "inline_richtext",
+        "id": "text",
+        "label": "Text" 
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Learn More"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link" 
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Item",
+        "type": "item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Name" 
+          },
+          {
+            "type": "text",
+            "id": "post",
+            "label": "Designation" 
+          },
+          {
+            "type": "inline_richtext",
+            "id": "comment",
+            "label": "Comment" 
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Background Image"
+          },{
+            "type": "header",
+            "content": "Routine list"
+          },{
+            "type": "text",
+            "id": "item_1",
+            "label": "Item 1"
+          },{
+            "type": "text",
+            "id": "item_2",
+            "label": "Item 2"
+          },{
+            "type": "text",
+            "id": "item_3",
+            "label": "Item 3"
+          },{
+            "type": "text",
+            "id": "item_4",
+            "label": "Item 4"
+          },{
+            "type": "text",
+            "id": "item_5",
+            "label": "Item 5"
+          },{
+            "type": "text",
+            "id": "item_6",
+            "label": "Item 6"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "Routine"
