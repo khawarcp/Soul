@@ -19,6 +19,13 @@
             "menu": "about"
           }
         },
+        "2185563c-4cb4-4a63-a081-18df3430ab05": {
+          "type": "link_list",
+          "settings": {
+            "heading": "HELP",
+            "menu": "help"
+          }
+        },
         "footer-2": {
           "type": "text",
           "settings": {
@@ -26,19 +33,19 @@
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
           }
         },
-        "2185563c-4cb4-4a63-a081-18df3430ab05": {
-          "type": "link_list",
+        "8005a9ba-5589-4312-8b7c-b385ac0e9d6d": {
+          "type": "fda",
           "settings": {
-            "heading": "HELP",
-            "menu": "help"
+            "fda_text": "*These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease."
           }
         }
       },
       "block_order": [
         "footer-0",
         "footer-1",
+        "2185563c-4cb4-4a63-a081-18df3430ab05",
         "footer-2",
-        "2185563c-4cb4-4a63-a081-18df3430ab05"
+        "8005a9ba-5589-4312-8b7c-b385ac0e9d6d"
       ],
       "settings": {
         "color_scheme": "background-1",
