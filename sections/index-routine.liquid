@@ -23,12 +23,24 @@
               <p> {{ block.settings.comment }} </p>                        
               <div class="list-routine">
                 <ul>
-                    <li><img src="{{ 'icon1.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_1 }}  </li>
-                    <li><img src="{{ 'icon2.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_2 }}  </li>
-                    <li><img src="{{ 'icon2.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_3 }}  </li>
+                  {% if block.settings.item_1 != blank %}                    
+                  <li><img src="{{ 'icon1.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_1 }}  </li>
+                {% endif %}                
+                {% if block.settings.item_2 != blank %}                    
+                <li><img src="{{ 'icon2.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_2 }}  </li>
+                  {% endif %}
+                  {% if block.settings.item_3 != blank %}                    
+                  <li><img src="{{ 'icon2.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_3 }}  </li>
+                {% endif %}
+                {% if block.settings.item_4 != blank %}                    
                     <li><img src="{{ 'icon1.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_4 }}  </li>
-                    <li><img src="{{ 'icon2.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_5 }}  </li>
-                    <li><img src="{{ 'icon2.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_6 }}  </li>
+                  {% endif %}
+                  {% if block.settings.item_5 != blank %}                    
+                  <li><img src="{{ 'icon2.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_5 }}  </li>
+                {% endif %}
+                {% if block.settings.item_6 != blank %}                    
+                <li><img src="{{ 'icon2.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.item_6 }}  </li>
+              {% endif %}
                 </ul>
               </div>
             </div>
