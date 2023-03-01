@@ -55,7 +55,75 @@
     },
     "389c4904-39d2-49a1-8233-3dd12f000397": {
       "type": "index-guess-work",
+      "blocks": {
+        "d71dc3eb-c929-435a-9832-756ea7205eb8": {
+          "type": "slide",
+          "settings": {
+            "text": "Better Sleep",
+            "subtext": "Stop counting sheep",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/guess1.png"
+          }
+        },
+        "76900ed1-7501-40da-81a9-ef2a185f31c6": {
+          "type": "slide",
+          "settings": {
+            "text": "Anti-Anxiety",
+            "subtext": "Feel like you again",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/guess2.png"
+          }
+        },
+        "4b9a905e-79f1-481f-955b-75becd325e52": {
+          "type": "slide",
+          "settings": {
+            "text": "Pain Relief",
+            "subtext": "Treating pain<br> shouldn’t be one",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/guess3.png"
+          }
+        },
+        "b85915a1-470f-4389-9fb2-9624511f9413": {
+          "type": "slide",
+          "settings": {
+            "text": "Better Sleep",
+            "subtext": "",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/guess1.png"
+          }
+        },
+        "c1b97846-8db4-4847-a28d-00c8026b4b78": {
+          "type": "slide",
+          "settings": {
+            "text": "Anti-Anxiety",
+            "subtext": "Feel like you again",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/guess2.png"
+          }
+        },
+        "77a17f98-d0c5-4e3c-9b92-d67b2cc4e35e": {
+          "type": "slide",
+          "settings": {
+            "text": "Pain Relief",
+            "subtext": "Treating pain<br> shouldn’t be one",
+            "url": "",
+            "image": "shopify:\/\/shop_images\/guess3.png"
+          }
+        }
+      },
+      "block_order": [
+        "d71dc3eb-c929-435a-9832-756ea7205eb8",
+        "76900ed1-7501-40da-81a9-ef2a185f31c6",
+        "4b9a905e-79f1-481f-955b-75becd325e52",
+        "b85915a1-470f-4389-9fb2-9624511f9413",
+        "c1b97846-8db4-4847-a28d-00c8026b4b78",
+        "77a17f98-d0c5-4e3c-9b92-d67b2cc4e35e"
+      ],
       "settings": {
+        "heading": "Take the guesswork out\nof good health.",
+        "after_text": "Not Sure Where To Start?\nTake Our Personalized Product Recommendation Quiz.",
+        "button_text": "Find Your Routine",
+        "button_url": ""
       }
     },
     "9cc57095-68af-4859-9beb-2ff294337d98": {
