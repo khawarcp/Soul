@@ -255,7 +255,47 @@
     },
     "e10abe8f-5856-41b3-b094-ceb9ce120b72": {
       "type": "index-routine",
+      "blocks": {
+        "9d6444aa-f81c-4cfb-a880-a94ecb52ba17": {
+          "type": "item",
+          "settings": {
+            "name": "Susie’s Plan",
+            "post": "Nurse",
+            "comment": "Susie works long hours, does yoga to decompress, and needs help unwinding after a 12 hour shift.",
+            "image": "shopify:\/\/shop_images\/routine-img.png",
+            "item_1": "Alert Capsules",
+            "item_2": "Harmoni Gummies",
+            "item_3": "Sleepi Gummies",
+            "item_4": "",
+            "item_5": "",
+            "item_6": ""
+          }
+        },
+        "57ae0156-e894-4421-856c-b400c5d4606f": {
+          "type": "item",
+          "settings": {
+            "name": "Susie’s Plan",
+            "post": "Nurse",
+            "comment": "Susie works long hours, does yoga to decompress, and needs help unwinding after a 12 hour shift.",
+            "image": "shopify:\/\/shop_images\/routine-img.png",
+            "item_1": "Alert Capsules",
+            "item_2": "Harmoni Gummies",
+            "item_3": "Sleepi Gummies",
+            "item_4": "",
+            "item_5": "",
+            "item_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "9d6444aa-f81c-4cfb-a880-a94ecb52ba17",
+        "57ae0156-e894-4421-856c-b400c5d4606f"
+      ],
       "settings": {
+        "heading": "A Routine Tailored to You.",
+        "text": "Our personalized quiz will help you create your perfect wellness routine to get you feeling like you again.",
+        "button_text": "Find Your Routine",
+        "button_url": ""
       }
     },
     "f4aff678-7931-4936-bb15-7ff4333fa2c3": {
