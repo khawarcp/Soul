@@ -6,18 +6,14 @@
     <div class="guess-slider">
       <div class="owl-carousel guess-slider1 owl-theme">
         {% for block in section.blocks %}          
-          <div class="item">
-            {% if block.settings.url != blank %}              
-              <a href="{{ block.settings.url }}">
-            {% endif %}
+          <div class="item">                    
+              <a href="{{ block.settings.url | default: '#' }}">          
               <div class="inner-guess">
                 {% render 'image-card', image: block.settings.image, lazy_load: true %}
                 <h4> {{ block.settings.text }} </h4>
                 <p>{{ block.settings.subtext }}</p>
-              </div>
-            {% if block.settings.url != blank %}              
-               </a>
-            {% endif %}
+              </div>                         
+               </a>            
           </div>
         {% endfor %}
       </div>
