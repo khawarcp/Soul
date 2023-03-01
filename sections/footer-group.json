@@ -8,15 +8,15 @@
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "MY ACCOUNT",
             "menu": "footer"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "heading": "ABOUT",
+            "menu": "about"
           }
         },
         "footer-2": {
@@ -25,12 +25,20 @@
             "heading": "Our mission",
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
           }
+        },
+        "2185563c-4cb4-4a63-a081-18df3430ab05": {
+          "type": "link_list",
+          "settings": {
+            "heading": "HELP",
+            "menu": "help"
+          }
         }
       },
       "block_order": [
         "footer-0",
         "footer-1",
-        "footer-2"
+        "footer-2",
+        "2185563c-4cb4-4a63-a081-18df3430ab05"
       ],
       "settings": {
         "color_scheme": "background-1",
