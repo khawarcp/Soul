@@ -1,4 +1,5 @@
 {
+    "name": "FAQ Template",
     "sections": {
         "page-banner":{
             "type": "page-banner"
