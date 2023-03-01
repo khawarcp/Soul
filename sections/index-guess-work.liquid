@@ -11,7 +11,7 @@
               <a href="{{ block.settings.url }}">
             {% endif %}
               <div class="inner-guess">
-                {% render 'image-card', image: block.settings.image, lazy_load: true, image_width: 324, image_height: 336 %}
+                {% render 'image-card', image: block.settings.image, lazy_load: true %}
                 <h4> {{ block.settings.text }} </h4>
                 <p>{{ block.settings.subtext }}</p>
               </div>

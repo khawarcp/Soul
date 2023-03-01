@@ -9,14 +9,14 @@
       {%- if image.width >= 1066 -%}{{ image | image_url: width: 1066 }} 1066w,{%- endif -%}
       {{ image | image_url }} {{ image.width }}w
     "
-    src="{{ image | image_url: width: image_width, height: image_height }}"  
+    src="{{ image | image_url: width: 2000 }}"  
     alt="{{ image.alt | escape }}"
     class="motion-reduce"
     {% unless lazy_load == false %}
       loading="lazy"
     {% endunless %}
-    width="{{ image_width }}"
-    height="{{ image_height }}"
+    width="{{ image.width }}"
+    height=""
   >
         {% else %}
             {{ 'image' | placeholder_svg_tag : "placeholder-svg placeholder" }}
