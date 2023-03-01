@@ -4,7 +4,7 @@
           <div class="footer-logo">
           <a href="{{ routes.root_url }}">
             {% if section.settings.footer_logo != blank %}
-                {% render 'image-card', image: section.settings.footer_logo, lazy_load: true %}
+                <img src="{{ section.settings.footer_logo | image_url: width: section.settings.footer_logo.width }}" height="" width="{{ section.settings.footer_logo.width }}" loading="lazy">
             {% else %}
                 <span class="h2">{{ shop.name }}</span>                
             {% endif %}
@@ -102,7 +102,7 @@
         {%- endfor -%}
           </div>
       <div  class="bottom-footer">
-          <span>&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}- All Rights Reserved </span>
+          <span>&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }} - All Rights Reserved </span>
       </div>
   </div>
   <div class="footer__content-bottom">
@@ -312,17 +312,6 @@
               "default": true,
               "label": "t:sections.footer.blocks.brand_information.settings.show_social.label",
               "info": "t:sections.footer.blocks.brand_information.settings.show_social.info"
-            },
-            {
-              "type": "text",
-              "id": "social_text",              
-              "label": "Social Text",
-              "default": "#tasteyourrelief"
-            },
-            {
-              "type": "text",
-              "id": "social_link",              
-              "label": "Social Link"
             }
           ]
         },
@@ -397,35 +386,7 @@
           ]
         }
       ],
-      "settings": [
-        {
-          "type": "select",
-          "id": "color_scheme",
-          "options": [
-            {
-              "value": "accent-1",
-              "label": "t:sections.all.colors.accent_1.label"
-            },
-            {
-              "value": "accent-2",
-              "label": "t:sections.all.colors.accent_2.label"
-            },
-            {
-              "value": "background-1",
-              "label": "t:sections.all.colors.background_1.label"
-            },
-            {
-              "value": "background-2",
-              "label": "t:sections.all.colors.background_2.label"
-            },
-            {
-              "value": "inverse",
-              "label": "t:sections.all.colors.inverse.label"
-            }
-          ],
-          "default": "background-1",
-          "label": "t:sections.all.colors.label"
-        },
+      "settings": [   
         {
             "type": "image_picker",
             "id": "footer_logo",
@@ -458,6 +419,17 @@
           "default": true,
           "label": "t:sections.footer.settings.show_social.label"
         },
+            {
+              "type": "text",
+              "id": "social_text",              
+              "label": "Social Text",
+              "default": "#tasteyourrelief"
+            },
+            {
+              "type": "text",
+              "id": "social_link",              
+              "label": "Social Link"
+            }
         {
           "type": "header",
           "content": "t:sections.footer.settings.header__3.content",
@@ -489,15 +461,7 @@
           "id": "payment_enable",
           "default": true,
           "label": "t:sections.footer.settings.payment_enable.label"
-        },{
-            "type": "header",
-            "content": "FDA"
-        },
-        {
-            "type": "inline_richtext",
-            "id": "fda_text",
-            "label": "Text"
-        },
+        },        
         {
           "type": "header",
           "content": "t:sections.all.spacing"
