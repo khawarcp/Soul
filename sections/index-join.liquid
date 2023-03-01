@@ -1,60 +1,27 @@
 <section class="join">
   <div class="join-flex">
     <div class="join-width">
-      <img src="images/join.png">
+      {% render 'image-card', image: section.settings.image, lazy_load: true %}
     </div>
     <div class="join-width">
-      <div class="inne-join">
-        <h3>Join the inner circle.</h3>
-        <p>Subscribe to any product for instant access to your Soul Inner Circle Membership. No commitment, completely free, with savings and perks that make it easier than ever to (exhale) feel your best.</p>
-        <div class="normal-btn">
-          <a href="#">
-            <span>Get Started</span>
-          </a>
-        </div>
+      <div class="inne-join">        
+        <h3> {{ section.settings.heading }} </h3>
+        <p> {{ section.settings.text }} </p>      
+        {% if section.settings.button_text != blank %}
+          <div class="normal-btn">
+            <a href="{{ section.settings.button_url | default: '#' }}" title="{{ section.settings.button_text }}"> <span>{{ section.settings.button_text }} </span></a>
+          </div>      
+        {% endif %}
         <div class="join-sl">
           <div class="owl-carousel join-slider owl-theme">
+            {% for block in section.blocks %}
             <div class="item">
               <div class="join-slider-inner">
-                <img src="images/join1.png">
-                <span>15% Off<br>
-                  Every Order
-                </span>
+                {% render 'image-card', image: block.settings.image, lazy_load: true %}
+                <span> {{ block.settings.text | newline_to_br }} </span>
               </div>
             </div>
-            <div class="item">
-              <div class="join-slider-inner">
-                <img src="images/join2.png">
-                <span>Sale<br>
-                  Boosters
-                </span>
-              </div>
-            </div>
-            <div class="item">
-              <div class="join-slider-inner">
-                <img src="images/join3.png">
-                <span>Free Shipping<br>
-                  On All Orders
-
-                </span>
-              </div>
-            </div>
-            <div class="item">
-              <div class="join-slider-inner">
-                <img src="images/join1.png">
-                <span>15% Off<br>
-                  Every Order
-                </span>
-              </div>
-            </div>
-            <div class="item">
-              <div class="join-slider-inner">
-                <img src="images/join2.png">
-                <span>15% Off<br>
-                  Every Order
-                </span>
-              </div>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -65,7 +32,52 @@
 {% schema %}
   {
     "name": "Join Us",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading" 
+      },
+      {
+        "type": "inline_richtext",
+        "id": "text",
+        "label": "Text" 
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Learn More"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link" 
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Item",
+        "type": "item",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text" 
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "Join Us"
