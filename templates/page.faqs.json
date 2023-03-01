@@ -1,15 +1,104 @@
 {
-    "name": "FAQ Template",
-    "sections": {
-        "page-banner":{
-            "type": "page-banner"
-        },
-        "faq-content":{
-            "type": "faq-content"
-        }
+  "sections": {
+    "page-banner": {
+      "type": "page-banner",
+      "settings": {
+        "heading": "We’ve Got\nAnswers",
+        "image": "shopify:\/\/shop_images\/faqs-banner.png"
+      }
     },
-    "order": [
-        "page-banner",
-        "faq-content"
-    ]
+    "faq-content": {
+      "type": "faq-content",
+      "blocks": {
+        "4bad14c4-7922-43b9-8821-b4348bde8f60": {
+          "type": "product",
+          "settings": {
+            "quiz": "Where do you ship?",
+            "answer": "Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout."
+          }
+        },
+        "21190d41-3eb1-45f5-affd-9735e29e505c": {
+          "type": "product",
+          "settings": {
+            "quiz": "How much is shipping?",
+            "answer": "Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout."
+          }
+        },
+        "9d40bcd9-029e-4121-b68d-335ee9e48738": {
+          "type": "shipping",
+          "settings": {
+            "quiz": "How much is shipping?",
+            "answer": "Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout."
+          }
+        },
+        "0717f37b-c682-4aad-b5b1-8e144696b802": {
+          "type": "shipping",
+          "settings": {
+            "quiz": "Where do you ship?",
+            "answer": "Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout."
+          }
+        },
+        "4082de11-ea8c-4f2d-aa3f-652f19f4dca3": {
+          "type": "memberships",
+          "settings": {
+            "quiz": "How much is shipping?",
+            "answer": "Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout."
+          }
+        },
+        "153450fb-a806-4c84-8f25-98e6b5ad6ac4": {
+          "type": "memberships",
+          "settings": {
+            "quiz": "Where do you ship?",
+            "answer": "Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout."
+          }
+        },
+        "a1c31755-49c6-44ab-85ce-b86e7fd7716e": {
+          "type": "orders",
+          "settings": {
+            "quiz": "How much is shipping?",
+            "answer": "Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout."
+          }
+        },
+        "dfa8e5d6-8f2f-412a-acf1-03249d337848": {
+          "type": "orders",
+          "settings": {
+            "quiz": "How much is shipping?",
+            "answer": "Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout."
+          }
+        },
+        "b29361e6-53c7-4b2f-8563-f16d194890d4": {
+          "type": "general",
+          "settings": {
+            "quiz": "Where do you ship?",
+            "answer": "Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout."
+          }
+        },
+        "9d2eae4d-af42-4bcb-bb16-dc443b6d1f96": {
+          "type": "general",
+          "settings": {
+            "quiz": "How much is shipping?",
+            "answer": "Shipping cost is calculated at checkout. Shipping is free for all orders over $75. If you would like expedited shipping, you can choose that option at checkout."
+          }
+        }
+      },
+      "block_order": [
+        "4bad14c4-7922-43b9-8821-b4348bde8f60",
+        "21190d41-3eb1-45f5-affd-9735e29e505c",
+        "9d40bcd9-029e-4121-b68d-335ee9e48738",
+        "0717f37b-c682-4aad-b5b1-8e144696b802",
+        "4082de11-ea8c-4f2d-aa3f-652f19f4dca3",
+        "153450fb-a806-4c84-8f25-98e6b5ad6ac4",
+        "a1c31755-49c6-44ab-85ce-b86e7fd7716e",
+        "dfa8e5d6-8f2f-412a-acf1-03249d337848",
+        "b29361e6-53c7-4b2f-8563-f16d194890d4",
+        "9d2eae4d-af42-4bcb-bb16-dc443b6d1f96"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "page-banner",
+    "faq-content"
+  ]
 }
