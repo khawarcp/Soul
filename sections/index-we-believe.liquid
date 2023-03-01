@@ -34,13 +34,13 @@
           <div class="inner-tab">
                 <h3> {{ block.settings.inner_heading }} </h3>
                 <p> {{ block.settings.text }} </p>                
-                {% if section.settings.button_text != blank %}        
+                {% if block.settings.button_text != blank %}        
                 <div class="primary-btn">
-                  <a href="{{ section.settings.button_url | default: '#'  }}"> {{ section.settings.button_text }} </a>
+                  <a href="{{ block.settings.button_url | default: '#'  }}"> {{ block.settings.button_text }} </a>
                   </div>
                 {% endif %}
-                {% if section.settings.quote != blank %}        
-                <span class="italc"> {{ section.settings.quote }} </span>
+                {% if block.settings.quote != blank %}        
+                <span class="italc"> {{ block.settings.quote }} </span>
                 {% endif %}
               </div>
         </div>
