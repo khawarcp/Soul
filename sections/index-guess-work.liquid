@@ -1,73 +1,34 @@
 <section class="guess-work padding-main">
   <div class="container">
     <div class="heading">
-      <h2>Take the guesswork out<br>
-        of good health.</h2>
+      <h2> {{ section.settings.heading }} </h2>
     </div>
     <div class="guess-slider">
       <div class="owl-carousel guess-slider1 owl-theme">
-        <div class="item">
-          <a href="#">
-            <div class="inner-guess">
-              <img src="images/guess1.png">
-              <h4>Better Sleep</h4>
-              <p>Stop counting sheep</p>
-            </div>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <div class="inner-guess">
-              <img src="images/guess2.png">
-              <h4>Anti-Anxiety</h4>
-              <p>Feel like you again</p>
-            </div>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <div class="inner-guess">
-              <img src="images/guess3.png">
-              <h4>Pain Relief</h4>
-              <p>Treating pain<br> shouldn’t be one</p>
-            </div>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <div class="inner-guess">
-              <img src="images/guess1.png">
-              <h4>Better Sleep</h4>
-              <p>Stop counting sheep</p>
-            </div>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <div class="inner-guess">
-              <img src="images/guess2.png">
-              <h4>Anti-Anxiety</h4>
-              <p>Feel like you again</p>
-            </div>
-          </a>
-        </div>
-        <div class="item">
-          <a href="#">
-            <div class="inner-guess">
-              <img src="images/guess3.png">
-              <h4>Pain Relief</h4>
-              <p>Treating pain<br> shouldn’t be one</p>
-            </div>
-          </a>
-        </div>
+        {% for block in section.blocks %}          
+          <div class="item">
+            {% if block.settings.url != blank %}              
+              <a href="{{ block.settings.url }}">
+            {% endif %}
+              <div class="inner-guess">
+                {% render 'image-card', image: block.settings.image, lazy_load: true, image_width: 324, image_height: 336 %}
+                <h4> {{ block.settings.text }} </h4>
+                <p>{{ block.settings.subtext }}</p>
+              </div>
+            {% if block.settings.url != blank %}              
+               </a>
+            {% endif %}
+          </div>
+        {% endfor %}
       </div>
     </div>
     <div class="bottom-heading">
-      <h3>Not Sure Where To Start?<br>
-        Take Our Personalized Product Recommendation Quiz.</h3>
+      <h3> {{ section.settings.after_text }} </h3>
+      {% if section.settings.button_text != blank %}        
       <div class="primary-btn">
-        <a href="#">Find Your Routine</a>
+        <a href="{{ section.settings.button_url | default: '#'  }}"> {{ section.settings.button_text }} </a>
       </div>
+      {% endif %}
     </div>
 
   </div>
@@ -76,7 +37,61 @@
 {% schema %}
   {
     "name": "Guess Work",
-    "settings": [],
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "heading",
+        "label": "Heading" 
+      },
+      {
+        "type": "header",
+        "content": "After Slider"
+      },
+      {
+        "type": "textarea",
+        "id": "after_text",
+        "label": "Text" 
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "default": "Find Your Routine"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Link" 
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Slide",
+        "type": "slide",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text" 
+          },
+          {
+            "type": "text",
+            "id": "subtext",
+            "label": "Subtext" 
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Link" 
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image" 
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "Guess Work"
