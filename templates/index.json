@@ -354,7 +354,63 @@
     },
     "16cb2e60-1222-4783-aeb6-96578c24b239": {
       "type": "index-customer-testimonials",
+      "blocks": {
+        "812d4cfb-01e3-4824-a6d0-961c04b5e94f": {
+          "type": "item",
+          "settings": {
+            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
+            "name": "Erica Chidi Cohen",
+            "post": "Doula and Health Educator",
+            "image": "shopify:\/\/shop_images\/c1.png"
+          }
+        },
+        "3a33c01e-9fc5-406f-9f18-de630a273c05": {
+          "type": "item",
+          "settings": {
+            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
+            "name": "Erica Chidi Cohen",
+            "post": "Doula and Health Educator",
+            "image": "shopify:\/\/shop_images\/c2.png"
+          }
+        },
+        "c582e829-bc14-42fe-8076-662c0600df54": {
+          "type": "item",
+          "settings": {
+            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
+            "name": "Erica Chidi Cohen",
+            "post": "Doula and Health Educator",
+            "image": "shopify:\/\/shop_images\/c3.png"
+          }
+        },
+        "3f71ca7a-dafd-4aac-b7f8-f4565d6b6d5d": {
+          "type": "item",
+          "settings": {
+            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
+            "name": "Erica Chidi Cohen",
+            "post": "Doula and Health Educator",
+            "image": "shopify:\/\/shop_images\/c1.png"
+          }
+        },
+        "ca7ca84f-07ea-4265-918a-34a3a5dac46e": {
+          "type": "item",
+          "settings": {
+            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
+            "name": "Erica Chidi Cohen",
+            "post": "Doula and Health Educator",
+            "image": "shopify:\/\/shop_images\/c2.png"
+          }
+        }
+      },
+      "block_order": [
+        "812d4cfb-01e3-4824-a6d0-961c04b5e94f",
+        "3a33c01e-9fc5-406f-9f18-de630a273c05",
+        "c582e829-bc14-42fe-8076-662c0600df54",
+        "3f71ca7a-dafd-4aac-b7f8-f4565d6b6d5d",
+        "ca7ca84f-07ea-4265-918a-34a3a5dac46e"
+      ],
       "settings": {
+        "heading": "Customers Love Us",
+        "text": "With thousands of people helped, discover why customers trust\nSoul with their daily wellness routines."
       }
     },
     "3876f598-6ed0-45b2-881e-ba01c0b028fc": {
