@@ -3,35 +3,32 @@
 
     <div class="meet-flex">
       <div class="inner-meet">
-        <h2>Meet the founders.</h2>
-        <h3>The brother-sister duo that started it all.</h3>
+        <h2> {{ section.settings.heading }} </h2>
+        <h3> {{ section.settings.subheading }} </h3>
       </div>
       <div class="meet-width">
         <div class="owl-carousel meet-slider owl-theme">
+          {% for block in section.blocks %}    
+            {% if block.settings.image != blank %}             
           <div class="item">
-            <img src="images/member1.png">
+            {% render 'image-card', image: block.settings.image, lazy_load: true %}
           </div>
-          <div class="item">
-            <img src="images/member1.png">
-          </div>
-          <div class="item">
-            <img src="images/member1.png">
-          </div>
-          <div class="item">
-            <img src="images/member1.png">
-          </div>
-
+        {% endif %}        
+      {% endfor %}
         </div>
       </div>
       <div class="meet-width">
         <div class="inner-meet">
-          <h2>Meet the founders.</h2>
-          <h3>The brother-sister duo that started it all.</h3>
-          <p>Soul was born out of two siblings’ passion for the benefits of wellness. Co-founders Angie Lee, serial entrepreneur, and Mike Lee, world-ranked boxer, have each experienced the powers of supplements. They are a powerhouse duo who have had to (literally) fight their way to the top of their respective industries.
-          </p>
+          <h2> {{ section.settings.heading }} </h2>
+          <h3> {{ section.settings.subheading }} </h3>
+          <p> {{ block.settings.text }} </p>
           <div class="two-btns">
-            <a class="secondary-btn" href="#">Learn More</a>
-            <a class="meet-btn" href="#">Meet the extended family</a>
+            {% if section.settings.button_text_1 != blank %}
+            <a class="secondary-btn" href="{{ block.settings.button_url_1 | default: '#'  }}" title="{{ block.settings.button_text }}"> {{ block.settings.button_text_1 }} </a>
+            {% endif %}
+            {% if section.settings.button_text_2 != blank %}
+            <a class="meet-btn" href="{{ block.settings.button_url_2 | default: '#'  }}" title="{{ block.settings.button_text }}"> {{ block.settings.button_text_2 }} </a>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -43,7 +40,60 @@
 {% schema %}
   {
     "name": "Meet the founder",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading" 
+      },{
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "text",
+        "label": "Text" 
+      },{
+        "type": "header",
+        "content": "CTAs"
+      },
+      {
+        "type": "text",
+        "id": "button_text_1",
+        "label": "Button Text",
+        "default": "Learn More"
+      },
+      {
+        "type": "url",
+        "id": "button_url_1",
+        "label": "Button Link" 
+      },
+      {
+        "type": "text",
+        "id": "button_text_2",
+        "label": "Button Text",
+        "default": "Learn More"
+      },
+      {
+        "type": "url",
+        "id": "button_url_2",
+        "label": "Button Link" 
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Item",
+        "type": "item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Background Image"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "Meet the founder"

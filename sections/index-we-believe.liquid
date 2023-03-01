@@ -36,7 +36,7 @@
                 <p> {{ block.settings.text }} </p>                
                 {% if block.settings.button_text != blank %}        
                 <div class="primary-btn">
-                  <a href="{{ block.settings.button_url | default: '#'  }}"> {{ block.settings.button_text }} </a>
+                  <a href="{{ block.settings.button_url | default: '#'  }}" title="{{ block.settings.button_text }}"> {{ block.settings.button_text }} </a>
                   </div>
                 {% endif %}
                 {% if block.settings.quote != blank %}        
