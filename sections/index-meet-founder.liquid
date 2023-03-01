@@ -21,13 +21,13 @@
         <div class="inner-meet">
           <h2> {{ section.settings.heading }} </h2>
           <h3> {{ section.settings.subheading }} </h3>
-          <p> {{ block.settings.text }} </p>
+          <p> {{ section.settings.text }} </p>
           <div class="two-btns">
             {% if section.settings.button_text_1 != blank %}
-            <a class="secondary-btn" href="{{ block.settings.button_url_1 | default: '#'  }}" title="{{ block.settings.button_text }}"> {{ block.settings.button_text_1 }} </a>
+            <a class="secondary-btn" href="{{ section.settings.button_url_1 | default: '#'  }}" title="{{ section.settings.button_text_1 }}"> {{ section.settings.button_text_1 }} </a>
             {% endif %}
             {% if section.settings.button_text_2 != blank %}
-            <a class="meet-btn" href="{{ block.settings.button_url_2 | default: '#'  }}" title="{{ block.settings.button_text }}"> {{ block.settings.button_text_2 }} </a>
+            <a class="meet-btn" href="{{ section.settings.button_url_2 | default: '#'  }}" title="{{ section.settings.button_text_2 }}"> {{ section.settings.button_text_2 }} </a>
             {% endif %}
           </div>
         </div>
