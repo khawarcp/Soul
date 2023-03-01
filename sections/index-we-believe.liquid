@@ -1,165 +1,51 @@
-<section class="we-belive padding-main" style="background-image: url(images/we-banner.png);">
+<section class="we-belive padding-main" loading="lazy" style="background-image: url({{ section.settings.background_image | image_url: width: section.settings.background_image.width }});">
   <div class="container">
     <div class="heading-new">
-      <h2>We Believe</h2>
+      <h2> {{ section.settings.heading }} </h2>
     </div>
     <div class="we-tabing-flex">
       <div class="tabing-width">
         <ul class="tabs">
-          <li class="tab-link current" data-tab="tab-1">
-            <span>Wellness Should Taste Delicious.</span>
-            <div class="inner-tab">
-              <h3>Wellness never tasted so good.</h3>
-              <p>We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.
-              </p>
-              <div class="primary-btn">
-                <a href="#">Learn More</a>
+          {% for block in section.blocks %}    
+            {% if block.settings.heading != blank %}              
+           <li class="tab-link {% if forloop.first %} current {% endif %}" data-tab="tab-{{ forloop.index }}">
+              <span> {{ block.settings.heading }} </span>
+              <div class="inner-tab">
+                <h3> {{ block.settings.inner_heading }} </h3>
+                <p> {{ block.settings.text }} </p>                
+                {% if section.settings.button_text != blank %}        
+                <div class="primary-btn">
+                  <a href="{{ section.settings.button_url | default: '#'  }}"> {{ section.settings.button_text }} </a>
+                  </div>
+                {% endif %}
+                {% if section.settings.quote != blank %}        
+                <span class="italc"> {{ section.settings.quote }} </span>
+                {% endif %}
               </div>
-              <span class="italc">
-                "It's like a treat for your tastebuds and your mind." - Amy C.</span>
-            </div>
-          </li>
-          <li class="tab-link" data-tab="tab-2">
-            <span>If It Doesn’t Work, It’s Just Candy.</span>
-            <div class="inner-tab">
-              <h3>If It Doesn’t Work, It’s Just Candy.</h3>
-              <p>We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.
-              </p>
-              <div class="primary-btn">
-                <a href="#">Learn More</a>
-              </div>
-              <span class="italc">
-                "It's like a treat for your tastebuds and your mind." - Amy C.</span>
-            </div>
-          </li>
-          <li class="tab-link" data-tab="tab-3">
-            <span>No artificial ingredients. All the good stuff.</span>
-            <div class="inner-tab">
-              <h3>No artificial ingredients. All the good stuff.</h3>
-              <p>We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.
-              </p>
-              <div class="primary-btn">
-                <a href="#">Learn More</a>
-              </div>
-              <span class="italc">
-                "It's like a treat for your tastebuds and your mind." - Amy C.</span>
-            </div>
-          </li>
-          <li class="tab-link" data-tab="tab-4">
-            <span>It’s probably best to have an expert on your team</span>
-            <div class="inner-tab">
-              <h3>It’s probably best to have an expert on your team</h3>
-              <p>We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.
-              </p>
-              <div class="primary-btn">
-                <a href="#">Learn More</a>
-              </div>
-              <span class="italc">
-                "It's like a treat for your tastebuds and your mind." - Amy C.</span>
-            </div>
-          </li>
-          <li class="tab-link" data-tab="tab-5">
-            <span>Wellness products should be backed by science.</span>
-            <div class="inner-tab">
-              <h3>Wellness products should be backed by science.</h3>
-              <p>We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.
-              </p>
-              <div class="primary-btn">
-                <a href="#">Learn More</a>
-              </div>
-              <span class="italc">
-                "It's like a treat for your tastebuds and your mind." - Amy C.</span>
-            </div>
-          </li>
-          <li class="tab-link" data-tab="tab-6">
-            <span>Products should be triple tested.</span>
-            <div class="inner-tab">
-              <h3>Products should be triple tested.</h3>
-              <p>We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.
-              </p>
-              <div class="primary-btn">
-                <a href="#">Learn More</a>
-              </div>
-              <span class="italc">
-                "It's like a treat for your tastebuds and your mind." - Amy C.</span>
-            </div>
-          </li>
+            </li>
+            {% endif %}        
+          {% endfor %}
         </ul>
       </div>
       <div class="tabing-width tab-data">
-
-        <div id="tab-1" class="tab-content current">
+        {% for block in section.blocks %}    
+          {% if block.settings.heading != blank %} 
+        <div id="tab-{{ forloop.index }}" class="tab-content {% if forloop.first %} current {% endif %}">
           <div class="inner-tab">
-            <h3>Wellness never tasted so good.</h3>
-            <p>We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.
-            </p>
-            <div class="primary-btn">
-              <a href="#">Learn More</a>
-            </div>
-            <span class="italc">
-              "It's like a treat for your tastebuds and your mind." - Amy C.</span>
-          </div>
+                <h3> {{ block.settings.inner_heading }} </h3>
+                <p> {{ block.settings.text }} </p>                
+                {% if section.settings.button_text != blank %}        
+                <div class="primary-btn">
+                  <a href="{{ section.settings.button_url | default: '#'  }}"> {{ section.settings.button_text }} </a>
+                  </div>
+                {% endif %}
+                {% if section.settings.quote != blank %}        
+                <span class="italc"> {{ section.settings.quote }} </span>
+                {% endif %}
+              </div>
         </div>
-        <div id="tab-2" class="tab-content">
-          <div class="inner-tab">
-            <h3>If It Doesn’t Work, It’s Just Candy.</h3>
-            <p>We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.
-            </p>
-            <div class="primary-btn">
-              <a href="#">Learn More</a>
-            </div>
-            <span class="italc">
-              "It's like a treat for your tastebuds and your mind." - Amy C.</span>
-          </div>
-        </div>
-        <div id="tab-3" class="tab-content">
-          <div class="inner-tab">
-            <h3>No artificial ingredients. All the good stuff.</h3>
-            <p>We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.
-            </p>
-            <div class="primary-btn">
-              <a href="#">Learn More</a>
-            </div>
-            <span class="italc">
-              "It's like a treat for your tastebuds and your mind." - Amy C.</span>
-          </div>
-        </div>
-        <div id="tab-4" class="tab-content">
-          <div class="inner-tab">
-            <h3>It’s probably best to have an expert on your team</h3>
-            <p>We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.
-            </p>
-            <div class="primary-btn">
-              <a href="#">Learn More</a>
-            </div>
-            <span class="italc">
-              "It's like a treat for your tastebuds and your mind." - Amy C.</span>
-          </div>
-        </div>
-        <div id="tab-5" class="tab-content">
-          <div class="inner-tab">
-            <h3>Wellness products should be backed by science.</h3>
-            <p>We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.
-            </p>
-            <div class="primary-btn">
-              <a href="#">Learn More</a>
-            </div>
-            <span class="italc">
-              "It's like a treat for your tastebuds and your mind." - Amy C.</span>
-          </div>
-        </div>
-        <div id="tab-6" class="tab-content">
-          <div class="inner-tab">
-            <h3>Products should be triple tested.</h3>
-            <p>We stay focused on offering a flavor forward wellness experience for our community. If there is a way to make an otherwise non-palatable ingredient taste great, we will find it.
-            </p>
-            <div class="primary-btn">
-              <a href="#">Learn More</a>
-            </div>
-            <span class="italc">
-              "It's like a treat for your tastebuds and your mind." - Amy C.</span>
-          </div>
-        </div>
+      {% endif %}        
+    {% endfor %}
       </div>
     </div>
   </div>
@@ -168,7 +54,60 @@
 {% schema %}
   {
     "name": "We Believe",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading" 
+      },{
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Item",
+        "type": "item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading" 
+          },
+          {
+            "type": "header",
+            "content": "Inner Tab"
+          },
+          {
+            "type": "text",
+            "id": "inner_heading",
+            "label": "Heading" 
+          },
+          {
+            "type": "inline_richtext",
+            "id": "text",
+            "label": "Text" 
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Learn More"
+          },
+          {
+            "type": "url",
+            "id": "button_url",
+            "label": "Button Link" 
+          },
+          {
+            "type": "inline_richtext",
+            "id": "quote",
+            "label": "Quote" 
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "We Believe"
