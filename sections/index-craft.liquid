@@ -6,7 +6,7 @@
         <h2> {{ section.settings.heading | newline_to_br }} </h2>
         {% form 'customer', class: 'newsletter-form' %}
           <input type="hidden" name="contact[tags]" value="newsletter">
-          <input type="text" id="NewsletterForm--{{ section.id }}" placeholder="Name" name="contact[name]" value="{{ form.name }}">          
+          <input required type="text" id="ContactForm--first_name" placeholder="Name" name="contact[first_name]" value="{{ form.first_name }}">          
           <div>
             <input
               id="NewsletterForm--{{ section.id }}"
