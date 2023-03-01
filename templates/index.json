@@ -211,7 +211,46 @@
     },
     "e73c066e-8d5f-46f4-92fe-3b3f1c13be34": {
       "type": "index-meet-founder",
+      "blocks": {
+        "e792f2a2-18b9-4c67-87cd-fc7af30cdfdf": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/member1.png"
+          }
+        },
+        "14ccd59c-1bdf-4e3d-99a6-1daa4431f61b": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/member1.png"
+          }
+        },
+        "f06e0f39-4864-470a-922f-26f0959d74c8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/member1.png"
+          }
+        },
+        "6ff40826-61cb-4560-b23f-1326506f9e18": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/member1.png"
+          }
+        }
+      },
+      "block_order": [
+        "e792f2a2-18b9-4c67-87cd-fc7af30cdfdf",
+        "14ccd59c-1bdf-4e3d-99a6-1daa4431f61b",
+        "f06e0f39-4864-470a-922f-26f0959d74c8",
+        "6ff40826-61cb-4560-b23f-1326506f9e18"
+      ],
       "settings": {
+        "heading": "Meet the founders.",
+        "subheading": "The brother-sister duo that started it all.",
+        "text": "Soul was born out of two siblings’ passion for the benefits of wellness. Co-founders Angie Lee, serial entrepreneur, and Mike Lee, world-ranked boxer, have each experienced the powers of supplements. They are a powerhouse duo who have had to (literally) fight their way to the top of their respective industries.",
+        "button_text_1": "Learn More",
+        "button_url_1": "",
+        "button_text_2": "Meet the extended family",
+        "button_url_2": ""
       }
     },
     "e10abe8f-5856-41b3-b094-ceb9ce120b72": {
