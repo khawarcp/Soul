@@ -1,3 +1,9 @@
+{% assign arrows = false %}
+{% for block in section.blocks %}  
+  {% if section.blocks.size > 1 %}
+  {% assign arrows = true %}
+  {% endif %}
+{% endfor %}
 <section class="global-slider padding-main" style="background-color: #FEECD5;" >
     <div class="container">
         <div class="global-heading">
@@ -20,10 +26,12 @@
                     </div>                
                 {% endfor %}
                 </div>
+                {% if arrows %}                  
                 <div class="slider-btns">
                     <button class='slide-prev slick-arrow'><img src="{{ 'left.png' | asset_url }}" height="" width="" loading="lazy"></button>
                     <button class='slide-next slick-arrow'><img src="{{ 'right.png' | asset_url }}" height="" width="" loading="lazy"></button>
                 </div>
+                {% endif %}
             </div>
             <div class="slider slider-nav">
             {% for block in section.blocks %}
