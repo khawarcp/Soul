@@ -26,17 +26,17 @@
             "menu": "help"
           }
         },
+        "8005a9ba-5589-4312-8b7c-b385ac0e9d6d": {
+          "type": "fda",
+          "settings": {
+            "fda_text": "*These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease."
+          }
+        },
         "footer-2": {
           "type": "text",
           "settings": {
             "heading": "Our mission",
             "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-          }
-        },
-        "8005a9ba-5589-4312-8b7c-b385ac0e9d6d": {
-          "type": "fda",
-          "settings": {
-            "fda_text": "*These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease."
           }
         }
       },
@@ -44,8 +44,8 @@
         "footer-0",
         "footer-1",
         "2185563c-4cb4-4a63-a081-18df3430ab05",
-        "footer-2",
-        "8005a9ba-5589-4312-8b7c-b385ac0e9d6d"
+        "8005a9ba-5589-4312-8b7c-b385ac0e9d6d",
+        "footer-2"
       ],
       "settings": {
         "color_scheme": "background-1",
