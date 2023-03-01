@@ -415,12 +415,102 @@
     },
     "3876f598-6ed0-45b2-881e-ba01c0b028fc": {
       "type": "index-partners",
+      "blocks": {
+        "5e41915f-250d-4999-9f74-6ef6a07deb67": {
+          "type": "Slide",
+          "settings": {
+            "text": ""
+          }
+        },
+        "a3a5b1bf-8074-4c66-83fa-f88e23f7fed3": {
+          "type": "Slide",
+          "settings": {
+            "text": ""
+          }
+        },
+        "b0e917ee-eddf-41ea-941b-9692cca33405": {
+          "type": "Slide",
+          "settings": {
+            "text": ""
+          }
+        },
+        "35a0812d-1d79-4659-bf3d-ea75910687d7": {
+          "type": "Slide",
+          "settings": {
+            "text": ""
+          }
+        },
+        "d2070601-8f82-499a-b28c-246f14d54289": {
+          "type": "Slide",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "5e41915f-250d-4999-9f74-6ef6a07deb67",
+        "a3a5b1bf-8074-4c66-83fa-f88e23f7fed3",
+        "b0e917ee-eddf-41ea-941b-9692cca33405",
+        "35a0812d-1d79-4659-bf3d-ea75910687d7",
+        "d2070601-8f82-499a-b28c-246f14d54289"
+      ],
       "settings": {
       }
     },
     "d37ced73-9dc6-4df9-977f-797e35da4dea": {
       "type": "index-doctor-testimonials",
+      "blocks": {
+        "292d1575-2790-4923-b259-9b8be2d4b6b3": {
+          "type": "item",
+          "settings": {
+            "comment": "",
+            "name": "",
+            "post": ""
+          }
+        },
+        "2511fd63-e8b6-4258-8411-2133a2314262": {
+          "type": "item",
+          "settings": {
+            "comment": "",
+            "name": "",
+            "post": ""
+          }
+        },
+        "9cf87b5f-ed45-4c51-8f4c-d6251e56a499": {
+          "type": "item",
+          "settings": {
+            "comment": "",
+            "name": "",
+            "post": ""
+          }
+        },
+        "e241ca2d-0d74-40a1-901f-dfec8fd2e494": {
+          "type": "item",
+          "settings": {
+            "comment": "",
+            "name": "",
+            "post": ""
+          }
+        },
+        "873502bc-6c93-4a73-a375-9c2b9acf23bc": {
+          "type": "item",
+          "settings": {
+            "comment": "",
+            "name": "",
+            "post": ""
+          }
+        }
+      },
+      "block_order": [
+        "292d1575-2790-4923-b259-9b8be2d4b6b3",
+        "2511fd63-e8b6-4258-8411-2133a2314262",
+        "9cf87b5f-ed45-4c51-8f4c-d6251e56a499",
+        "e241ca2d-0d74-40a1-901f-dfec8fd2e494",
+        "873502bc-6c93-4a73-a375-9c2b9acf23bc"
+      ],
       "settings": {
+        "heading": "",
+        "text": ""
       }
     },
     "859ef481-cf31-476f-8fb5-3d985b1b7296": {
