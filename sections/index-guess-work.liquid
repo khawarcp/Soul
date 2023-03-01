@@ -1,7 +1,7 @@
 <section class="guess-work padding-main">
   <div class="container">
     <div class="heading">
-      <h2> {{ section.settings.heading }} </h2>
+      <h2> {{ section.settings.heading | newline_to_br }} </h2>
     </div>
     <div class="guess-slider">
       <div class="owl-carousel guess-slider1 owl-theme">
@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="bottom-heading">
-      <h3> {{ section.settings.after_text }} </h3>
+      <h3> {{ section.settings.after_text | newline_to_br }} </h3>
       {% if section.settings.button_text != blank %}        
       <div class="primary-btn">
         <a href="{{ section.settings.button_url | default: '#'  }}"> {{ section.settings.button_text }} </a>
