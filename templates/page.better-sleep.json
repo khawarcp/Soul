@@ -1,0 +1,31 @@
+{
+    "name": "Better Sleep",
+    "sections": {
+        "better-bannner":{
+            "type": "better-banner"
+        },
+        "better-claim":{
+            "type": "better-claim"
+        },
+        "better-facts":{
+            "type": "better-facts"
+        },
+        "better-features":{
+            "type": "better-features"
+        },
+        "better-join":{
+            "type": "better-join"
+        },
+        "better-video":{
+            "type": "better-video"
+        }
+    },
+    "order": [
+        "better-bannner",
+        "better-claim",
+        "better-facts",
+        "better-features",
+        "better-join",
+        "better-video"
+    ]
+}
