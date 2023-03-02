@@ -1,9 +1,35 @@
 <div class="join-now">
     <div class="inner-join">
-        <h3>Claim 50% Off Before Supplies Run Out</h3>
+        <h3> {{ section.settings.text }} </h3>        
+        {% if section.settings.button_text != blank %}            
         <div class="normal-btn">
-            <a href="#">start snoozing
-            </a>
+            <a href="{{ section.settings.button_link }}" title="{{ section.settings.button_text }}"> {{ section.settings.button_text }} </a>
         </div>
+    {% endif %}
     </div>
 </div>
+
+{% schema %}
+    {
+        "name": "Claim",
+        "settings": [          
+            {
+                "type": "text",
+                "id": "text",
+                "label": "Text",
+                "default": "Claim 50% Off Before Supplies Run Out"
+            },  
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button Text",
+                "default": "start snoozing"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button Link"
+            }
+        ]
+    }
+{% endschema %}

@@ -15,7 +15,7 @@
         </div>
         {% if section.settings.bottom_text != blank %}            
         <div class="best-heading">
-            <h3> {{ section.settings.bottom_text }} </h3>
+            <h3> {{ section.settings.bottom_text | newline_to_br }} </h3>
         </div>
         {% endif %}
 
