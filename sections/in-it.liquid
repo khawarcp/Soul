@@ -17,7 +17,9 @@
 <!--           ========== end loop ======== -->
         </div>
         <div class="primary-btn">
-            <a href="#">Join the community</a>
+              {% if section.settings.btn-text and section.settings.btn-url %}
+                <a href="{{ section.settings.btn-url }}">{{ section.settings.btn-text }}</a>
+              {% endif %}
         </div>
     </div>
 </section>
