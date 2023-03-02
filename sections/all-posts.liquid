@@ -2,7 +2,7 @@
     <div class="cat-tags">
         <div class="container">
             <ul class="catagory">
-                <li><a href="#">All Categories</a></li>
+                <li><a href="/blogs/blog">All Categories</a></li>
                 <!-- ==== start loop ==== -->
                 {% for blog in blogs %}
                   {% for article in blog.articles %}
@@ -45,8 +45,13 @@
     </section>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Blog Posts",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Blog Posts"
+      }
+    ]
   }
 {% endschema %}
 
