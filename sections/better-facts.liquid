@@ -7,8 +7,8 @@
             {% for block in section.blocks %}
                 {% if block.settings.value != blank %}                    
                     <div class="for-width">
-                        <h4>85%</h4>
-                        <p>of customers surveyed fell asleep faster when taking Sleepi</p>
+                        <h4> {{ block.settings.value }} </h4>
+                        <p> {{ block.settings.text }} </p>
                     </div>
                 {% endif %}                
             {% endfor %}            
@@ -29,7 +29,7 @@
 
 {% schema %}
     {
-        "name": "Video",
+        "name": "Facts",
         "settings": [    
             {
                 "type": "text",
