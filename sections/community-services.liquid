@@ -1,8 +1,56 @@
+<section class="services padding-main">
+    <div class="container">
+        <div class="service-flex">
+            <div class="service-width">
+                <img src="images/p1.png">
+                <p>Support</p>
+            </div>
+            <div class="service-width">
+                <img src="images/p2.png">
+                <p>Education</p>
+            </div>
+            <div class="service-width">
+                <img src="images/p3.png">
+                <p>Motivation</p>
+            </div>
+            <div class="service-width">
+                <img src="images/p4.png">
+                <p>Accountability</p>
+            </div>
+        </div>
+
+    </div>
+</section>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "Community Services",
+    "settings": [
+        
+    ],
+    "blocks": [
+        {
+            "type": "text",
+            "name": "Benifit",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "label": "Main Image",
+                    "id": "main-image"
+                },
+                {
+                    "type": "text",
+                    "label": "Heading",
+                    "id": "title"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Community Services"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
