@@ -1,30 +1,20 @@
 <section class="testimonialss padding-main">
 
         <div class="testi-flex">
+<!--           ====== start loop ======= -->
             <div class="test-width">
                 <div class="inner-testi">
-                    <img src="images/copy.png">
-                    <p>Everyone in the Soul Wellness community shares a common interest and desire for overall wellness - sharing ideas and information, connecting with one another, and supporting each other.</p>
-                    <span>Kelly Brady
+                    <img src="{{ block.settings.main-image | img_url: 'master' }}">
+                    <p>{{ block.settings.review-text }}</p>
+                    <span>{{ block.settings.title }}
                     </span>
-                    <p>Oct 10</p>
+                    <p>{{ block.settings.review-date }}</p>
                 </div>
                 <div class="side-img">
-                    <img src="images/t1.png">
+                    <img src="{{ block.settings.main-image | img_url: 'master' }}">
                 </div>
             </div>
-            <div class="test-width">
-                <div class="inner-testi">
-                    <img src="images/copy.png">
-                    <p>Everyone in the Soul Wellness community shares a common interest and desire for overall wellness - sharing ideas and information, connecting with one another, and supporting each other.</p>
-                    <span>Kelly Brady
-                    </span>
-                    <p>Oct 10</p>
-                </div>
-                <div class="side-img">
-                    <img src="images/t2.png">
-                </div>
-            </div>
+<!--           ============ end loop ====== -->
         </div>
 
 </section>
