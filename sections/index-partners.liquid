@@ -1,4 +1,4 @@
-<section class="partner padding-main">
+<section class="partner padding-main" style="background-color: {{ section.settings.background_color }}">
   <div class="container">
     <div class="partner-ctm-slider">
       {% for block in section.blocks %}        
@@ -20,6 +20,12 @@
             "name": "Slide",
             "type": "Slide",
             "settings": [              
+                {
+                    "type": "color",
+                    "id": "background_color",
+                    "label": "Background Color",
+                    "default": "#EFF7F6"
+                },
                 {
                     "type": "textarea",
                     "id": "text",
