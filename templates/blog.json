@@ -13,11 +13,11 @@
         "padding_bottom": 36
       }
     },
-    "6fac9074-b1a2-43b1-b11a-a68abc3ffc24": {
-      "type": "blog-banner",
+    "4c431604-28ea-426d-99d3-e44d1e42a276": {
+      "type": "page-banner",
       "settings": {
-        "main-heading": "Wellness<br> Education",
-        "main-img": "shopify:\/\/shop_images\/blogs-banner.png"
+        "heading": "Wellness\nEducation",
+        "image": "shopify:\/\/shop_images\/blogs-banner.png"
       }
     },
     "4c8b61e4-4959-4a72-b7e2-ae4b2a4f0c07": {
@@ -28,7 +28,7 @@
   },
   "order": [
     "main",
-    "6fac9074-b1a2-43b1-b11a-a68abc3ffc24",
+    "4c431604-28ea-426d-99d3-e44d1e42a276",
     "4c8b61e4-4959-4a72-b7e2-ae4b2a4f0c07"
   ]
 }
