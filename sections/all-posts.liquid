@@ -19,10 +19,8 @@
         <div class="container">
             <div class="blogs-flex">
                 <!-- ==== start loop ===== -->
-                {% for blog in blogs %}
-                  {% for article in blog.articles %}
+                {% for article in blogs['blog'].articles reversed %}
                       {% render 'custom-article-card', article: article %}
-                  {% endfor %} 
                 {% endfor %}
                     <div class="blogs-inner">
                         <div class="blogs-img">
