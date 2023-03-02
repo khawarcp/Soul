@@ -1,31 +1,71 @@
 {
-    "name": "Better Sleep",
-    "sections": {
-        "better-bannner":{
-            "type": "better-banner"
+  "sections": {
+    "better-bannner": {
+      "type": "better-banner",
+      "blocks": {
+        "0ec52fe8-1387-4eaa-ab3b-ff839adf8471": {
+          "type": "list-item",
+          "settings": {
+            "text": "Fall asleep faster"
+          }
         },
-        "better-claim":{
-            "type": "better-claim"
+        "d1ddca8a-e8b0-412d-8330-cf848e82991f": {
+          "type": "list-item",
+          "settings": {
+            "text": "Stay asleep longer"
+          }
         },
-        "better-facts":{
-            "type": "better-facts"
-        },
-        "better-features":{
-            "type": "better-features"
-        },
-        "better-join":{
-            "type": "better-join"
-        },
-        "better-video":{
-            "type": "better-video"
+        "cda798af-7b28-4179-b1ab-55b7e3b2f7d1": {
+          "type": "list-item",
+          "settings": {
+            "text": "Improve sleep quality"
+          }
         }
+      },
+      "block_order": [
+        "0ec52fe8-1387-4eaa-ab3b-ff839adf8471",
+        "d1ddca8a-e8b0-412d-8330-cf848e82991f",
+        "cda798af-7b28-4179-b1ab-55b7e3b2f7d1"
+      ],
+      "settings": {
+        "heading": "Tired of Tossing\nand Turning?",
+        "text": "Meet your new bedtime bestie: Sleepi Gummies work three-fold to help put sleepless nights behind you with one delicious bite.",
+        "button_text": "Try sleepi 50% off",
+        "button_link": ""
+      }
     },
-    "order": [
-        "better-bannner",
-        "better-claim",
-        "better-facts",
-        "better-features",
-        "better-join",
-        "better-video"
-    ]
+    "better-claim": {
+      "type": "better-claim",
+      "settings": {
+      }
+    },
+    "better-facts": {
+      "type": "better-facts",
+      "settings": {
+      }
+    },
+    "better-features": {
+      "type": "better-features",
+      "settings": {
+      }
+    },
+    "better-join": {
+      "type": "better-join",
+      "settings": {
+      }
+    },
+    "better-video": {
+      "type": "better-video",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "better-bannner",
+    "better-claim",
+    "better-facts",
+    "better-features",
+    "better-join",
+    "better-video"
+  ]
 }
