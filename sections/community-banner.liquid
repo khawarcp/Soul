@@ -1,8 +1,59 @@
+<section class="community-banner global-banner-padding" style="background-image:url({{ section.settings.section_bg | img_url: 'master' }});">
+    <div class="container">
+        <div class="community-inner">
+            <h4>{{ section.settings.sub-title }}</h4>
+            <h1>
+              {{ section.settings.main-title }}
+            </h1>
+                <p>{{ section.settings.main-text }}</p>
+                <div class="normal-btn">
+                    <a href="{{ section.settings.btn-url }}">{{ section.settings.btn-text }}</a>
+                </div>
+        </div>
+
+    </div>
+</section>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "Community Banner",
+    "settings": [
+        {
+            "type": "image_picker",
+            "label": "BG Image",
+            "id": "section_bg"
+        },
+        {
+            "type": "text",
+            "label": "Sub Title",
+            "id": "sub-title"
+        },
+        {
+            "type": "text",
+            "label": "Main Title",
+            "id": "main-title"
+        },
+        {
+            "type": "textarea",
+            "label": "Main Text",
+            "id": "main-text"
+        },
+        {
+            "type": "text",
+            "label": "Button Text",
+            "id": "btn-text"
+        },
+        {
+            "type": "url",
+            "label": "Button URL",
+            "id": "btn-url"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Community Banner"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
