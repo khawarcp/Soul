@@ -6,7 +6,7 @@
     endif
   endfor
 %}
-<section class="global-slider padding-main" style="background-color: #CDD1EA;" >
+<section class="global-slider padding-main" style="background-color: {{ section.settings.background_color }}" >
     <div class="container">
         <div class="global-heading">
             <h2> {{ section.settings.heading }} </h2>
@@ -48,7 +48,7 @@
 
 {% schema %}
     {
-        "name": "Customer Testimonials",
+        "name": "Testimonials",
         "settings": [
             {
                 "type": "color",
@@ -97,7 +97,7 @@
         ],
         "presets": [
         {
-            "name": "Customer Testimonials"
+            "name": "Testimonials"
         }
         ]
     }
