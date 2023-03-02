@@ -1,8 +1,74 @@
+<section class="testimonialss padding-main">
+
+        <div class="testi-flex">
+            <div class="test-width">
+                <div class="inner-testi">
+                    <img src="images/copy.png">
+                    <p>Everyone in the Soul Wellness community shares a common interest and desire for overall wellness - sharing ideas and information, connecting with one another, and supporting each other.</p>
+                    <span>Kelly Brady
+                    </span>
+                    <p>Oct 10</p>
+                </div>
+                <div class="side-img">
+                    <img src="images/t1.png">
+                </div>
+            </div>
+            <div class="test-width">
+                <div class="inner-testi">
+                    <img src="images/copy.png">
+                    <p>Everyone in the Soul Wellness community shares a common interest and desire for overall wellness - sharing ideas and information, connecting with one another, and supporting each other.</p>
+                    <span>Kelly Brady
+                    </span>
+                    <p>Oct 10</p>
+                </div>
+                <div class="side-img">
+                    <img src="images/t2.png">
+                </div>
+            </div>
+        </div>
+
+</section>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "Community Testimonials",
+    "settings": [
+        
+    ],
+    "max_blocks": 2,
+    "blocks": [
+        {
+            "type": "text",
+            "name": "Testimonial",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "label": "Main Image",
+                    "id": "main-image"
+                },
+                {
+                    "type": "text",
+                    "label": "Name",
+                    "id": "title"
+                },
+                {
+                    "type": "text",
+                    "label": "Date",
+                    "id": "review-date"
+                },
+                {
+                    "type": "textarea",
+                    "label": "Review Text",
+                    "id": "review-text"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Community Testimonials"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
