@@ -147,6 +147,38 @@
         "poster_image": "shopify:\/\/shop_images\/youtube.png",
         "youtube_link": "https:\/\/www.youtube.com\/watch?v=gvZWvRyWHM4"
       }
+    },
+    "9ce590e9-a11c-4aa7-b739-6f56bf9db30f": {
+      "type": "better-join",
+      "blocks": {
+        "c4e05105-2ec9-4edb-aa8f-b433b3cb421a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sleep1.png",
+            "heading": "How Well Are\nYou Sleeping?",
+            "subheading": "sleep quality Quiz",
+            "text": "When it comes to sleep, quantity and quality matter. Curious how your sleep hygiene stacks up? Answer a few quick questions to get your sleep quality score and personalized tips for improving your routine!",
+            "button_text": "Take the quiz",
+            "button_link": "",
+            "feature_heading_1": "",
+            "feature_text_1": "",
+            "feature_heading_2": "",
+            "feature_text_2": "",
+            "feature_heading_3": "",
+            "feature_text_3": "",
+            "feature_heading_4": "",
+            "feature_text_4": "",
+            "feature_heading_5": "",
+            "feature_text_5": ""
+          }
+        }
+      },
+      "block_order": [
+        "c4e05105-2ec9-4edb-aa8f-b433b3cb421a"
+      ],
+      "settings": {
+        "section__id": "sleep"
+      }
     }
   },
   "order": [
@@ -155,6 +187,7 @@
     "better-join",
     "better-claim",
     "better-features",
-    "better-video"
+    "better-video",
+    "9ce590e9-a11c-4aa7-b739-6f56bf9db30f"
   ]
 }
