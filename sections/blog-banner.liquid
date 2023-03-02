@@ -1,8 +1,34 @@
+<section class="blogs-banner" style="background-image: url({{ section.settings.main-img | img_url: 'master' }});">
+    <div class="container">
+        <div class="blogs-inner">
+            <h1>
+                {{ section.settings.main-heading }}
+            </h1>
+
+        </div>
+    </div>
+</section>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "Blogs Banner",
+    "settings": [
+        {
+            "type": "text",
+            "label": "Main Heading",
+            "id": "main-heading"
+        },
+        {
+            "type": "image_picker",
+            "label": "Main Image",
+            "id": "main-img"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Blogs Banner"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
