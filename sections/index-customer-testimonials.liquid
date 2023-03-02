@@ -1,9 +1,11 @@
-{% assign arrows = false %}
-{% for block in section.blocks %}  
-  {% if section.blocks.size > 1 %}
-  {% assign arrows = true %}
-  {% endif %}
-{% endfor %}
+{% liquid
+  assign arrows = false
+  for block in section.blocks
+    if section.blocks.size > 1
+      assign arrows = true
+    endif
+  endfor
+%}
 <section class="global-slider padding-main" style="background-color: #CDD1EA;" >
     <div class="container">
         <div class="global-heading">
