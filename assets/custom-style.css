@@ -25,3 +25,8 @@ svg.modal__toggle-open.icon.icon-search {
     height: 28px;
     width: 28px;
 }
+
+.header__icon, .header__icon--cart .icon{
+    width: 2.4rem;
+    height: 3.4rem;
+}
