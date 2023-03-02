@@ -139,6 +139,11 @@
       "settings": {
       }
     },
+    "e4541c3c-dc06-496e-9f8c-685009f2e538": {
+      "type": "index-partners",
+      "settings": {
+      }
+    },
     "better-video": {
       "type": "better-video",
       "settings": {
@@ -187,6 +192,7 @@
     "better-join",
     "better-claim",
     "better-features",
+    "e4541c3c-dc06-496e-9f8c-685009f2e538",
     "better-video",
     "9ce590e9-a11c-4aa7-b739-6f56bf9db30f"
   ]
