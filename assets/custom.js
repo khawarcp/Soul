@@ -9,9 +9,11 @@ $(function () {
         if ($scroll > 100) {
             $navbar.addClass("scroll-nav");
             $header.addClass("bar-color");
+            $header.addClass("scrolled-past-header");
         } else {
             $navbar.removeClass("scroll-nav");
             $header.removeClass("bar-color");
+            $header.removeClass("scrolled-past-header");
         }
     });
 
