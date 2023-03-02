@@ -141,7 +141,33 @@
     },
     "e4541c3c-dc06-496e-9f8c-685009f2e538": {
       "type": "index-partners",
+      "blocks": {
+        "98a79865-10c6-4bbd-9746-eec090c765e2": {
+          "type": "Slide",
+          "settings": {
+            "text": ""
+          }
+        },
+        "8448790f-d1b7-42ff-9bf3-56710808f808": {
+          "type": "Slide",
+          "settings": {
+            "text": ""
+          }
+        },
+        "78142f8e-3c29-4d0d-98e0-6668e716fc81": {
+          "type": "Slide",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "98a79865-10c6-4bbd-9746-eec090c765e2",
+        "8448790f-d1b7-42ff-9bf3-56710808f808",
+        "78142f8e-3c29-4d0d-98e0-6668e716fc81"
+      ],
       "settings": {
+        "background_color": "#feecd5"
       }
     },
     "better-video": {
