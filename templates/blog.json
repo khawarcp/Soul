@@ -19,10 +19,16 @@
         "main-heading": "Wellness<br> Education",
         "main-img": "shopify:\/\/shop_images\/blogs-banner.png"
       }
+    },
+    "4c8b61e4-4959-4a72-b7e2-ae4b2a4f0c07": {
+      "type": "all-posts",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "6fac9074-b1a2-43b1-b11a-a68abc3ffc24"
+    "6fac9074-b1a2-43b1-b11a-a68abc3ffc24",
+    "4c8b61e4-4959-4a72-b7e2-ae4b2a4f0c07"
   ]
 }
