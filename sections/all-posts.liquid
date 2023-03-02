@@ -3,13 +3,11 @@
         <div class="container">
             <ul class="catagory">
                 <li><a href="{{ blog.url }}">All Categories</a></li>
-                <!-- ==== start loop ==== -->
-                {% for article in blogs['blog'].articles reversed %}
+                <!-- ==== start loop ==== -->              
                     {% for tag in article.tags %}                       
-              <li>
-              <a {% if current_tags contains tag %}class="active" {% endif %} href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
-                </li>        
-                    {% endfor %}
+                      <li>
+                      <a {% if current_tags contains tag %}class="active" {% endif %} href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
+                        </li>                            
               {% endfor %}
                 <!-- ======= end loop ====== -->
             </ul>
