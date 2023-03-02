@@ -2,7 +2,7 @@
     <div class="cat-tags">
         <div class="container">
             <ul class="catagory">
-                <li {% if current_tags != tag %}class="active" {% endif %}><a href="{{ blog.url }}">All Categories</a></li>
+                <li {% if blog.all_tags != tag %}class="active" {% endif %}><a href="{{ blog.url }}">All Categories</a></li>
                 <!-- ==== start loop ==== -->              
                     {% for tag in blog.all_tags %}                      
                       <li {% if current_tags contains tag %}class="active" {% endif %}>
