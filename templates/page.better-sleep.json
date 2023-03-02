@@ -159,12 +159,26 @@
           "settings": {
             "text": ""
           }
+        },
+        "2f86e042-d92f-407c-9533-2effbf7afec9": {
+          "type": "Slide",
+          "settings": {
+            "text": ""
+          }
+        },
+        "48363085-a2b1-4eba-a8c6-da3ad2001b00": {
+          "type": "Slide",
+          "settings": {
+            "text": ""
+          }
         }
       },
       "block_order": [
         "98a79865-10c6-4bbd-9746-eec090c765e2",
         "8448790f-d1b7-42ff-9bf3-56710808f808",
-        "78142f8e-3c29-4d0d-98e0-6668e716fc81"
+        "78142f8e-3c29-4d0d-98e0-6668e716fc81",
+        "2f86e042-d92f-407c-9533-2effbf7afec9",
+        "48363085-a2b1-4eba-a8c6-da3ad2001b00"
       ],
       "settings": {
         "background_color": "#feecd5"
