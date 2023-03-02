@@ -18,10 +18,48 @@
         "btn-text": "Get Started",
         "btn-url": "#"
       }
+    },
+    "eb0868a1-c0e0-47d0-b6e3-e0088ab17328": {
+      "type": "in-it",
+      "blocks": {
+        "14499516-1484-4036-b2a7-03f553fe04a2": {
+          "type": "text",
+          "settings": {
+            "title": "Wellness",
+            "text": "A place for members to connect based on shared experiences and turn for health related issues."
+          }
+        },
+        "46c9779f-51b2-47a9-8db5-708996d83910": {
+          "type": "text",
+          "settings": {
+            "title": "Perks",
+            "text": "Exclusive giveaways, sales and early access to product drops."
+          }
+        },
+        "71e9dbc5-882b-4df1-ba2f-5a29f1d3f4f9": {
+          "type": "text",
+          "settings": {
+            "title": "Community",
+            "text": "General wellness education and knowledge sharing."
+          }
+        }
+      },
+      "block_order": [
+        "14499516-1484-4036-b2a7-03f553fe04a2",
+        "46c9779f-51b2-47a9-8db5-708996d83910",
+        "71e9dbc5-882b-4df1-ba2f-5a29f1d3f4f9"
+      ],
+      "settings": {
+        "section_bg": "shopify:\/\/shop_images\/for-banner.png",
+        "main-title": "What’s in It for You?",
+        "btn-text": "Join the community",
+        "btn-url": "#"
+      }
     }
   },
   "order": [
     "main",
-    "4ed86409-3326-47ac-984e-49eb6f650a34"
+    "4ed86409-3326-47ac-984e-49eb6f650a34",
+    "eb0868a1-c0e0-47d0-b6e3-e0088ab17328"
   ]
 }
