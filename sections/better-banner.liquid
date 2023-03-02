@@ -1,21 +1,64 @@
 <section class="better-banner padding-main global-banner-padding" style="background-image: url(images/better-banner.png);">
 <div class="container">
     <div class="heading-custom">
-        <h1>Tired of Tossing<br> 
-            and Turning?</h1>
-        <p>Meet your new bedtime bestie: Sleepi Gummies work three-fold to help put sleepless nights behind you with one delicious bite.
-        </p>
+        <h1> {{ section.settings.heading | newline_to_br }} </h1>
+        <p> {{ section.settings.text }} </p>
         <div class="bullets">
             <ul>
-                <li><img src="images/tick-white.png">Fall asleep faster</li>
-                <li><img src="images/tick-white.png">Stay asleep longer</li>
-                <li><img src="images/tick-white.png">Improve sleep quality</li>
+                {% for block in section.blocks %}
+                    {% if block.settings.text != blank %}                        
+                        <li><img src="{{ 'tick-white.png' | asset_url }}" height="" width="" loading="lazy"> {{ block.settings.text }} </li>
+                    {% endif %}
+                {% endfor %}
             </ul>
         </div>
-        <div class="normal-btn">
-            <a href="#">Try sleepi 50% off
-            </a>
-        </div>
+        {% if section.settings.button_text != blank %}            
+            <div class="normal-btn">
+                <a href="{{ section.settings.button_link }}" title="{{ section.settings.button_text }}"> {{ section.settings.button_text }} </a>
+            </div>
+        {% endif %}
     </div>
 </div>
 </section>
+
+{% schema %}
+    {
+        "name": "Banner",
+        "settings": [
+            {
+                "type": "textarea",
+                "id": "heading",
+                "label": "Heading"
+            },
+            {
+                "type": "inline_richtext",
+                "id": "text",
+                "label": "Text"
+            },
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button Text",
+                "default": "Try sleepi 50% off"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button Link"
+            }
+        ],
+        "blocks": [
+            {
+                "name": "List Item",
+                "type": "list-item",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "Text"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}
