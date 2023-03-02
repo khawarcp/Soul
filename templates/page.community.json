@@ -125,6 +125,51 @@
       ],
       "settings": {
       }
+    },
+    "25cb193d-a0d4-4abb-9df9-048f6b6c49f5": {
+      "type": "community-members",
+      "blocks": {
+        "dc73fac8-835c-43fe-8526-44b5ac04d174": {
+          "type": "image",
+          "settings": {
+            "main-image": "shopify:\/\/shop_images\/Rectangle_572.png"
+          }
+        },
+        "6e17a6ff-8e5f-42ab-8cc8-0a9452da19f4": {
+          "type": "image",
+          "settings": {
+            "main-image": "shopify:\/\/shop_images\/Rectangle_573.png"
+          }
+        },
+        "a0db3849-b123-4272-ad85-91d477acde25": {
+          "type": "image",
+          "settings": {
+            "main-image": "shopify:\/\/shop_images\/Rectangle_574.png"
+          }
+        },
+        "dfaf797b-99e7-412d-9aeb-8776d34ba319": {
+          "type": "image",
+          "settings": {
+            "main-image": "shopify:\/\/shop_images\/Rectangle_575.png"
+          }
+        },
+        "a54624ad-bfb7-4131-9973-8bd3f78f0477": {
+          "type": "image",
+          "settings": {
+            "main-image": "shopify:\/\/shop_images\/Rectangle_576.png"
+          }
+        }
+      },
+      "block_order": [
+        "dc73fac8-835c-43fe-8526-44b5ac04d174",
+        "6e17a6ff-8e5f-42ab-8cc8-0a9452da19f4",
+        "a0db3849-b123-4272-ad85-91d477acde25",
+        "dfaf797b-99e7-412d-9aeb-8776d34ba319",
+        "a54624ad-bfb7-4131-9973-8bd3f78f0477"
+      ],
+      "settings": {
+        "main-heading": "Your Fellow Community Members"
+      }
     }
   },
   "order": [
@@ -132,6 +177,7 @@
     "4ed86409-3326-47ac-984e-49eb6f650a34",
     "eb0868a1-c0e0-47d0-b6e3-e0088ab17328",
     "31df8a08-6932-40bf-a325-a3c828c228ac",
-    "cb295b40-a0f5-4a54-87fd-d9671f1f8274"
+    "cb295b40-a0f5-4a54-87fd-d9671f1f8274",
+    "25cb193d-a0d4-4abb-9df9-048f6b6c49f5"
   ]
 }
