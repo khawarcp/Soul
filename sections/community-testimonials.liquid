@@ -12,7 +12,7 @@
                     <p>{{ block.settings.review-date }}</p>
                 </div>
                 <div class="side-img">
-                    <img src="{{ block.settings.main-image | img_url: 'master' }}">
+                    {% render 'image-card', image: block.settings.main-image, lazy_load: true %}
                 </div>
             </div>
           {% endfor %}
