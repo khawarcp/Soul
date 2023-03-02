@@ -2,12 +2,13 @@
     <div class="cat-tags">
         <div class="container">
             <ul class="catagory">
-                <li><a href="/blogs/blog">All Categories</a></li>
+                <li><a href="{{ blog.url }}">All Categories</a></li>
                 <!-- ==== start loop ==== -->
                 {% for article in blogs['blog'].articles reversed %}
-                    {% for tag in article.tags %}
-                        {% assign urlCheck =  tag | handle %}
-                        <li><a {% if tag == current_tags  %} class="active" {% endif %} href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a></li>
+                    {% for tag in article.tags %}                       
+              <li>
+              <a {% if current_tags contains tag %}class="active" {% endif %} href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
+                </li>        
                     {% endfor %}
               {% endfor %}
                 <!-- ======= end loop ====== -->
