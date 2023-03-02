@@ -2,13 +2,26 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "4ed86409-3326-47ac-984e-49eb6f650a34": {
+      "type": "community-banner",
+      "settings": {
+        "section_bg": "shopify:\/\/shop_images\/community-banner.png",
+        "sub-title": "Looking for Support on Your Wellness Journey?",
+        "main-title": "Introducing<br> the Soul<br> Wellness<br> Community",
+        "main-text": "Dedicated to taste, community, and the pursuit of wellness, this inclusive Facebook group will be the support system you need during your journey!",
+        "btn-text": "Get Started",
+        "btn-url": "#"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "4ed86409-3326-47ac-984e-49eb6f650a34"
   ]
 }
