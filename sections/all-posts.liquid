@@ -7,7 +7,7 @@
                 {% for article in blogs['blog'].articles reversed %}
                     {% for tag in article.tags %}
                         {% assign urlCheck =  tag | handle %}
-                        <li><a {% if page.url contains  urlCheck  %} class="active" {% endif %} href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a></li>
+                        <li><a {% if tag == current_tags  %} class="active" {% endif %} href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a></li>
                     {% endfor %}
               {% endfor %}
                 <!-- ======= end loop ====== -->
