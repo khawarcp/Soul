@@ -6,7 +6,7 @@
                 <!-- ==== start loop ==== -->
                 {% for article in blogs['blog'].articles reversed %}
                     {% for tag in article.tags %}
-                        <li><a href="/blogs/{{ tag }}">{{ tag }}</a></li>
+                        <li><a href="/blogs/{{ tag | handelize }}">{{ tag }}</a></li>
                     {% endfor %}
               {% endfor %}
                 <!-- ======= end loop ====== -->
