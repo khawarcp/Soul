@@ -1,8 +1,86 @@
+<section class="for-you padding-main " style="background-image: url(images/for-banner.png);">
+    <div class="container">
+        <div class="global-heading">
+            <h2>What’s in It for You?</h2>
+        </div>
+        <div class="for-flex">
+            <div class="for-width">
+                <div class="tick">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h4>Wellness</h4>
+                <p>A place for members to connect based on shared experiences and turn for health related issues.</p>
+            </div>
+            <div class="for-width">
+                <div class="tick">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h4>Perks</h4>
+                <p>Exclusive giveaways, sales and early access to product drops.</p>
+            </div>
+            <div class="for-width">
+                <div class="tick">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h4>Community</h4>
+                <p>General wellness education and knowledge sharing.</p>
+            </div>
+        </div>
+        <div class="primary-btn">
+            <a href="#">Join the community</a>
+        </div>
+    </div>
+</section>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "In It",
+    "settings": [
+        {
+            "type": "image_picker",
+            "label": "BG Image",
+            "id": "section_bg"
+        },
+        {
+            "type": "text",
+            "label": "Main Title",
+            "id": "main-title"
+        },
+        {
+            "type": "text",
+            "label": "Button Text",
+            "id": "btn-text"
+        },
+        {
+            "type": "url",
+            "label": "Button URL",
+            "id": "btn-url"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "text",
+            "name": "Benifit",
+            "settings": [
+                {
+                    "type": "text",
+                    "label": "Heading",
+                    "id": "title"
+                },
+                {
+                    "type": "textarea",
+                    "label": "Text",
+                    "id": "text"
+                }
+            ]
+        }
+    ],
+    "max_blocks": 3,
+    "presets": [
+        {
+            "name": "In It"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
