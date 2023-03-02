@@ -16,7 +16,8 @@
             {% endif %}
               <ul>
                 {%- if section.settings.show_social -%}
-                {% if settings.social_facebook_link != blank %}                    
+                {%- render 'social-icons' -%}
+                {% if settings.social_facebook_link != blank %}                                   
                     <li><a href="{{ settings.social_facebook_link }}" title="Facebook"><img loading="lazy" height="" width="" src="{{ 'facebook.png' | asset_url }}"></a></li>
                 {% endif %}
                 {% if settings.social_instagram_link != blank %}      

@@ -16,3 +16,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.header__icon:hover .icon, .modal__close-button:hover .icon {
+    transform: unset;
+}
+
+svg.modal__toggle-open.icon.icon-search {
+    height: 28px;
+    width: 28px;
+}
