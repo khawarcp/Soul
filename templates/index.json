@@ -352,6 +352,68 @@
         "image": "shopify:\/\/shop_images\/join.png"
       }
     },
+    "4ffeef9c-0781-4764-af79-fe583e492409": {
+      "type": "index-testimonials",
+      "blocks": {
+        "46b83bf2-0bc0-44c9-8c84-d0a1039da278": {
+          "type": "item",
+          "settings": {
+            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
+            "name": "Erica Chidi Cohen",
+            "post": "Doula and Health Educator",
+            "image": "shopify:\/\/shop_images\/t2.png"
+          }
+        },
+        "9f53a4e2-0b57-4b88-92bd-fcae4e5c001b": {
+          "type": "item",
+          "settings": {
+            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
+            "name": "Erica Chidi Cohen",
+            "post": "Doula and Health Educator",
+            "image": "shopify:\/\/shop_images\/c2.png"
+          }
+        },
+        "1b464399-3052-41fd-b188-a7fd60973106": {
+          "type": "item",
+          "settings": {
+            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
+            "name": "Erica Chidi Cohen",
+            "post": "Doula and Health Educator",
+            "image": "shopify:\/\/shop_images\/c3.png"
+          }
+        },
+        "a63c185f-09ee-4156-9738-861805d960ad": {
+          "type": "item",
+          "settings": {
+            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
+            "name": "Erica Chidi Cohen",
+            "post": "Doula and Health Educator",
+            "image": "shopify:\/\/shop_images\/c1.png"
+          }
+        },
+        "bd21b162-181b-499e-afcb-502781eaba3e": {
+          "type": "item",
+          "settings": {
+            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
+            "name": "Erica Chidi Cohen",
+            "post": "Doula and Health Educator",
+            "image": "shopify:\/\/shop_images\/c2.png"
+          }
+        }
+      },
+      "block_order": [
+        "46b83bf2-0bc0-44c9-8c84-d0a1039da278",
+        "9f53a4e2-0b57-4b88-92bd-fcae4e5c001b",
+        "1b464399-3052-41fd-b188-a7fd60973106",
+        "a63c185f-09ee-4156-9738-861805d960ad",
+        "bd21b162-181b-499e-afcb-502781eaba3e"
+      ],
+      "settings": {
+        "background_color": "#cdd1ea",
+        "heading": "Customers Loves Us.",
+        "text": "With thousands of people helped, discover why customers trust\nSoul with their daily wellness routines."
+      }
+    },
     "3876f598-6ed0-45b2-881e-ba01c0b028fc": {
       "type": "index-partners",
       "blocks": {
@@ -401,62 +463,61 @@
       "settings": {
       }
     },
-    "4ffeef9c-0781-4764-af79-fe583e492409": {
+    "b7efbf90-8dd1-4e0c-9fba-e3cc14135bb7": {
       "type": "index-testimonials",
       "blocks": {
-        "46b83bf2-0bc0-44c9-8c84-d0a1039da278": {
+        "6e5f2dd9-7fbd-413e-bae9-675696aa233b": {
           "type": "item",
           "settings": {
+            "comment": "",
+            "name": "",
+            "post": ""
           }
         },
-        "9f53a4e2-0b57-4b88-92bd-fcae4e5c001b": {
+        "3c2e97f5-589a-4494-a578-a56ea219258a": {
           "type": "item",
           "settings": {
-            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
-            "name": "Erica Chidi Cohen",
-            "post": "Doula and Health Educator",
-            "image": "shopify:\/\/shop_images\/c2.png"
+            "comment": "",
+            "name": "",
+            "post": ""
           }
         },
-        "1b464399-3052-41fd-b188-a7fd60973106": {
+        "67ea4341-1dca-4997-8352-2ada2a3d4cdd": {
           "type": "item",
           "settings": {
-            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
-            "name": "Erica Chidi Cohen",
-            "post": "Doula and Health Educator",
-            "image": "shopify:\/\/shop_images\/c3.png"
+            "comment": "",
+            "name": "",
+            "post": ""
           }
         },
-        "a63c185f-09ee-4156-9738-861805d960ad": {
+        "3bc3b4cf-2a60-4de5-a67c-e0a0dc73358c": {
           "type": "item",
           "settings": {
-            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
-            "name": "Erica Chidi Cohen",
-            "post": "Doula and Health Educator",
-            "image": "shopify:\/\/shop_images\/c1.png"
+            "comment": "",
+            "name": "",
+            "post": ""
           }
         },
-        "bd21b162-181b-499e-afcb-502781eaba3e": {
+        "95cfdfe9-f7e3-4d71-8330-89368f95587b": {
           "type": "item",
           "settings": {
-            "comment": "Everything is sourced\nwith such integrity and\nresponsibility.",
-            "name": "Erica Chidi Cohen",
-            "post": "Doula and Health Educator",
-            "image": "shopify:\/\/shop_images\/c2.png"
+            "comment": "",
+            "name": "",
+            "post": ""
           }
         }
       },
       "block_order": [
-        "46b83bf2-0bc0-44c9-8c84-d0a1039da278",
-        "9f53a4e2-0b57-4b88-92bd-fcae4e5c001b",
-        "1b464399-3052-41fd-b188-a7fd60973106",
-        "a63c185f-09ee-4156-9738-861805d960ad",
-        "bd21b162-181b-499e-afcb-502781eaba3e"
+        "6e5f2dd9-7fbd-413e-bae9-675696aa233b",
+        "3c2e97f5-589a-4494-a578-a56ea219258a",
+        "67ea4341-1dca-4997-8352-2ada2a3d4cdd",
+        "3bc3b4cf-2a60-4de5-a67c-e0a0dc73358c",
+        "95cfdfe9-f7e3-4d71-8330-89368f95587b"
       ],
       "settings": {
         "background_color": "#CDD1EA",
-        "heading": "Customers Loves Us.",
-        "text": "With thousands of people helped, discover why customers trust\nSoul with their daily wellness routines."
+        "heading": "",
+        "text": ""
       }
     },
     "d37ced73-9dc6-4df9-977f-797e35da4dea": {
@@ -535,8 +596,9 @@
     "e73c066e-8d5f-46f4-92fe-3b3f1c13be34",
     "e10abe8f-5856-41b3-b094-ceb9ce120b72",
     "f4aff678-7931-4936-bb15-7ff4333fa2c3",
-    "3876f598-6ed0-45b2-881e-ba01c0b028fc",
     "4ffeef9c-0781-4764-af79-fe583e492409",
+    "3876f598-6ed0-45b2-881e-ba01c0b028fc",
+    "b7efbf90-8dd1-4e0c-9fba-e3cc14135bb7",
     "d37ced73-9dc6-4df9-977f-797e35da4dea",
     "859ef481-cf31-476f-8fb5-3d985b1b7296"
   ]
