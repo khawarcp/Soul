@@ -1,12 +1,42 @@
 <section class="video padding-main">
     <div class="container">
         <div class="inner-video">
-            <a data-fancybox="" href="https://www.youtube.com/">
-                <img src="images/youtube.png">
+            <a data-fancybox="" href="{{ section.settings.video_url }}">                
+                {% render 'image-card', image: section.settings.background_image %}
             </a>
         </div>
+        {% if section.settings.button_text != blank %}            
         <div class="primary-btn">
-            <a href="#">start snoozing</a>
+            <a href="{{ section.settings.button_link }}" title="{{ section.settings.button_text }}"> {{ section.settings.button_text }} </a>
         </div>
+    {% endif %}
     </div>
 </section>
+
+{% schema %}
+    {
+        "name": "Banner",
+        "settings": [            
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button Text",
+                "default": "start snoozing"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button Link"
+            },{
+                "type": "image_picker",
+                "id": "poster_image",
+                "label": "Poster Image"
+            },
+            {
+                "type": "video_url",
+                "id": "youtube_link",
+                "label": "Youtube Link"
+            }
+        ]
+    }
+{% endschema %}
