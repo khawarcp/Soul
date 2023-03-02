@@ -4,12 +4,10 @@
             <ul class="catagory">
                 <li><a href="/blogs/blog">All Categories</a></li>
                 <!-- ==== start loop ==== -->
-                {% for blog in blogs %}
-                  {% for article in blog.articles %}
+                {% for article in blogs['blog'].articles reversed %}
                     {% for tag in article.tags %}
                         <li class="active"><a href="/blogs/{{ tag }}">{{ tag }}</a></li>
                     {% endfor %}
-                  {% endfor %}
               {% endfor %}
                 <!-- ======= end loop ====== -->
             </ul>
