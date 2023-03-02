@@ -2,6 +2,7 @@
 
         <div class="testi-flex">
 <!--           ====== start loop ======= -->
+          {% for block in section.blocks %}
             <div class="test-width">
                 <div class="inner-testi">
                     <img src="https://cdn.shopify.com/s/files/1/0729/9370/2193/files/copy.png?v=1677738451">
@@ -14,6 +15,7 @@
                     <img src="{{ block.settings.main-image | img_url: 'master' }}">
                 </div>
             </div>
+          {% endfor %}
 <!--           ============ end loop ====== -->
         </div>
 
