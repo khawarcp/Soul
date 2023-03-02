@@ -7,7 +7,9 @@
             </h1>
                 <p>{{ section.settings.main-text }}</p>
                 <div class="normal-btn">
+                  {% if section.settings.btn-text and section.settings.btn-url %}
                     <a href="{{ section.settings.btn-url }}">{{ section.settings.btn-text }}</a>
+                  {% endif %}
                 </div>
         </div>
 
