@@ -1,8 +1,47 @@
+<section class="member padding-main">
+    <div class="global-heading">
+        <h2>{{ section.settings.main-heading }}</h2>
+    </div>
+    <div class="member-slides">
+        <div class="owl-carousel member-slider owl-theme">
+          {% for block in section.blocks %}
+            <div class="item">
+                {% render 'image-card', image: block.settings.main-image, lazy_load: true %}
+            </div>
+          {% endfor %}
+        </div>
+    </div>
+
+</section>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+    "name": "Community Members",
+    "settings": [
+        {
+            "type": "text",
+            "label": "Main Heading",
+            "id": "main-heading"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "Member Image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "label": "Member Image",
+                    "id": "main-image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Community Members"
+        }
+    ]
+}
 {% endschema %}
 
 {% stylesheet %}
