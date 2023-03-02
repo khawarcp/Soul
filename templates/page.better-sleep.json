@@ -42,7 +42,39 @@
     },
     "better-facts": {
       "type": "better-facts",
+      "blocks": {
+        "56ff5d7c-b5a4-488a-80c9-ef9b613590c9": {
+          "type": "item",
+          "settings": {
+            "value": "85%",
+            "text": "of customers surveyed fell asleep faster when taking Sleepi"
+          }
+        },
+        "3ad23486-858e-43b3-b262-910379454f2c": {
+          "type": "item",
+          "settings": {
+            "value": "99%",
+            "text": "of customers surveyed would recommend to a friend"
+          }
+        },
+        "096fcbf7-21d5-4a7b-80cd-076111d0a8e6": {
+          "type": "item",
+          "settings": {
+            "value": "87%",
+            "text": "of customers surveyed woke up feeling well rested"
+          }
+        }
+      },
+      "block_order": [
+        "56ff5d7c-b5a4-488a-80c9-ef9b613590c9",
+        "3ad23486-858e-43b3-b262-910379454f2c",
+        "096fcbf7-21d5-4a7b-80cd-076111d0a8e6"
+      ],
       "settings": {
+        "heading": "You’re Getting Verrry Sleepi",
+        "bottom_text": "Your best night’s sleep ever,\nis only one click away.",
+        "button_text": "Redeem my offer",
+        "button_link": ""
       }
     },
     "better-features": {
