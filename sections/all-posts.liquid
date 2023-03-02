@@ -11,13 +11,6 @@
               {% endfor %}
                 <!-- ======= end loop ====== -->
             </ul>
-
-          <select name="filter-tags" onchange="location = this.value;">
-                <option value="{{ blog.url }}">All</option>
-                {% for tag in blog.all_tags %}
-                  <option value="{{ blog.url }}/tagged/{{ tag | handleize }}" {% if current_tags contains tag %}selected{% endif %}>{{ tag | link_to_tag: tag }}</option>
-              {% endfor %}
-            </select>
         </div>
     </div>
     <section class="blogs-main padding-main">
