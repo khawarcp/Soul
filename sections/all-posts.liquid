@@ -6,7 +6,7 @@
                 <!-- ==== start loop ==== -->              
                     {% for tag in blog.all_tags %}                      
                       <li>
-                      <a {% if current_tags contains tag %}class="active" {% endif %} href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
+                      <a {% if current_tags contains tag %}class="active" {% endif %} href="{{ blog.url }}/tagged/{{ tag | handleize }}">{{ tag }}</a>
                         </li>                            
               {% endfor %}
                 <!-- ======= end loop ====== -->
