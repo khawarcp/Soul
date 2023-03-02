@@ -1,3 +1,42 @@
+
+    <div class="cat-tags">
+        <div class="container">
+            <ul class="catagory">
+                <li><a href="#">All Categories</a></li>
+                <!-- ==== start loop ==== -->
+                <li class="active"><a href="#">Anxiety</a></li>
+                <!-- ======= end loop ====== -->
+            </ul>
+        </div>
+    </div>
+    <section class="blogs-main padding-main">
+        <div class="container">
+            <div class="blogs-flex">
+                <!-- ==== start loop ===== -->
+                {% for blog in blogs %}
+                  {% for article in blog.articles %}
+                      {% render 'custom-article-card', article: article %}
+                  {% endfor %} 
+                {% endfor %}
+                    <div class="blogs-inner">
+                        <div class="blogs-img">
+                            <img src="images/blog1.png">
+                        </div>
+                        <div class="blogs-content">
+                            <h5>Four Ways Model and Health
+                                Expert Holly Owens Uses CBD</h5>
+                            <p>Hi! I’m Holly Owens,
+                                a model, influencer, and 
+                                Lyme Disease survivor </p>
+                            <a class="blog-btn" href="#">Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ======== end loop ==== -->
+            </div>
+        </div>
+    </section>
 {% schema %}
   {
     "name": "Section name",

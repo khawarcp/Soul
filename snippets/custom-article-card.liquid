@@ -1,0 +1,13 @@
+<div class="blogs-width">
+    <div class="blogs-inner">
+        <div class="blogs-img">
+            <img src="{{ article.image.src | img_url: 'master' }}">
+        </div>
+        <div class="blogs-content">
+            <h5>{{ article.title }}</h5>
+            <p>{{ article.excerpt_or_content | strip_html }} </p>
+            <a class="blog-btn" href="{{ article.url }}">Learn More
+            </a>
+        </div>
+    </div>
+</div>
