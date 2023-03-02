@@ -55,11 +55,53 @@
         "btn-text": "Join the community",
         "btn-url": "#"
       }
+    },
+    "31df8a08-6932-40bf-a325-a3c828c228ac": {
+      "type": "community-services",
+      "blocks": {
+        "9dda1f29-810c-42ae-b9ad-1772ef0a3e7c": {
+          "type": "text",
+          "settings": {
+            "main-image": "shopify:\/\/shop_images\/p1.png",
+            "title": "Support"
+          }
+        },
+        "9877fb64-8367-4a76-81d6-fd8fcac8fad0": {
+          "type": "text",
+          "settings": {
+            "main-image": "shopify:\/\/shop_images\/p2.png",
+            "title": "Education"
+          }
+        },
+        "145f7365-19d3-41f6-82e0-cd65887c0b7c": {
+          "type": "text",
+          "settings": {
+            "main-image": "shopify:\/\/shop_images\/p3.png",
+            "title": "Motivation"
+          }
+        },
+        "3eb3441e-1cb0-4bb9-a1a5-5888b8fda6b0": {
+          "type": "text",
+          "settings": {
+            "main-image": "shopify:\/\/shop_images\/p4.png",
+            "title": "Accountability"
+          }
+        }
+      },
+      "block_order": [
+        "9dda1f29-810c-42ae-b9ad-1772ef0a3e7c",
+        "9877fb64-8367-4a76-81d6-fd8fcac8fad0",
+        "145f7365-19d3-41f6-82e0-cd65887c0b7c",
+        "3eb3441e-1cb0-4bb9-a1a5-5888b8fda6b0"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "4ed86409-3326-47ac-984e-49eb6f650a34",
-    "eb0868a1-c0e0-47d0-b6e3-e0088ab17328"
+    "eb0868a1-c0e0-47d0-b6e3-e0088ab17328",
+    "31df8a08-6932-40bf-a325-a3c828c228ac"
   ]
 }
