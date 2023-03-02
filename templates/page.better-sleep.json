@@ -58,6 +58,10 @@
     "better-video": {
       "type": "better-video",
       "settings": {
+        "button_text": "start snoozing",
+        "button_link": "",
+        "poster_image": "shopify:\/\/shop_images\/youtube.png",
+        "youtube_link": "https:\/\/www.youtube.com\/watch?v=gvZWvRyWHM4"
       }
     }
   },
