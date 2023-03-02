@@ -4,7 +4,7 @@
             <ul class="catagory">
                 <li><a href="{{ blog.url }}" class="{% if current_tags != tag %}active{% endif %}">All Categories</a></li>
                 <!-- ==== start loop ==== -->              
-                    {% for tag in article.tags %}                       
+                    {% for tag in blog.all_tags %}                      
                       <li>
                       <a {% if current_tags contains tag %}class="active" {% endif %} href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
                         </li>                            
