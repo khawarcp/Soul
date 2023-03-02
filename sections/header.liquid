@@ -316,12 +316,9 @@
                         </div>
                     </div>
                 </div>
-                {%- if request.page_type == 'index' -%}
-                                <h1 class="header__heading">
-                              {%- endif -%}
-                                  <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset mobile-logo">
-                                    {%- if settings.logo != blank -%}
-                                      {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+                <a href="{{ routes.root_url }}" class="mobile-logo">
+                  {%- if settings.logo != blank -%}
+                   {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
                                       {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
                                       {{ settings.logo | image_url: width: 500 | image_tag:
                                         class: 'header__heading-logo',
@@ -330,13 +327,11 @@
                                         width: settings.logo_width,
                                         alt: logo_alt
                                       }}
-                                    {%- else -%}
-                                      <span class="h2">{{ shop.name }}</span>
-                                    {%- endif -%}
-                                  </a>
-                              {%- if request.page_type == 'index' -%}
-                                </h1>
-                              {%- endif -%}
+                  {%- else -%}
+                    <span class="h2">{{ shop.name }}</span>
+                  {%- endif -%}
+                </a>
+              
                 <div class="humber-menu">
                     <label for="menu">
                         <input style="display:none" type="checkbox" class="d-none" id="menu">
