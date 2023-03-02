@@ -4,7 +4,13 @@
             <ul class="catagory">
                 <li><a href="#">All Categories</a></li>
                 <!-- ==== start loop ==== -->
-                <li class="active"><a href="#">Anxiety</a></li>
+                {% for blog in blogs %}
+                  {% for article in blog.articles %}
+                    {% for tag in article.tags %}
+                        <li class="active"><a href="/blogs/{{ tag }}">{{ tag }}</a></li>
+                    {% endfor %}
+                  {% endfor %}
+              {% endfor %}
                 <!-- ======= end loop ====== -->
             </ul>
         </div>
