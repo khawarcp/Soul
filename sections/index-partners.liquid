@@ -15,17 +15,19 @@
 {% schema %}
   {
     "name": "Partners",
+    "settings": [
+      {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color",
+          "default": "#EFF7F6"
+      }
+    ],
     "blocks": [
         {
             "name": "Slide",
             "type": "Slide",
-            "settings": [              
-                {
-                    "type": "color",
-                    "id": "background_color",
-                    "label": "Background Color",
-                    "default": "#EFF7F6"
-                },
+            "settings": [                              
                 {
                     "type": "textarea",
                     "id": "text",
