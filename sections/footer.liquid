@@ -14,17 +14,10 @@
             {% if section.settings.social_text != blank %}                
                 <a class="taste" href="{{ section.settings.social_link }}" title="{{ section.settings.social_text }}">{{ section.settings.social_text }}</a>
             {% endif %}
-              <ul>
-                {%- if section.settings.show_social -%}
-                {%- render 'social-icons' -%}
-                {% if settings.social_facebook_link != blank %}                                   
-                    <li><a href="{{ settings.social_facebook_link }}" title="Facebook"><img loading="lazy" height="" width="" src="{{ 'facebook.png' | asset_url }}"></a></li>
-                {% endif %}
-                {% if settings.social_instagram_link != blank %}      
-                    <li><a href="{{ settings.social_instagram_link }}" title="Instagram"><img loading="lazy" height="" width="" src="{{ 'instagram.png' | asset_url }}"></a></li>
-                {% endif %}
-                {%- endif -%}  
-              </ul>
+              
+            {%- if section.settings.show_social -%}
+              {%- render 'social-icons' -%}               
+            {%- endif -%}              
           </div>
       </div>
       <div class="nav-flex">
