@@ -1,43 +1,61 @@
-<section class="join" id="how">
+<section class="join" id="{{ section.settings.section__id }}">
+    {% for block in section.blocks %}    
         <div class="join-flex">
             <div class="join-width">
-                <img src="images/how1.png">
+                {% render 'image-card', image: block.settings.image, lazy_load: true %}
             </div>
             <div class="join-width">
                 <div class="inne-join">
-                    <h3>How Sleepi Hacks<br>
-                        Your REM</h3>
-                    <p>This plant-powered sleep solution is designed to optimize every aspect of sleep. We’ve combined the naturally sedative effects of terpenes and Melatonin to help you fall asleep faster, with the powerfully calming properties of CBN (CBD’s sleepy cousin) to increase relaxation and quality of sleep, so you can doze off peacefully, without feeling off the next day.</p>
-                </div>
-            </div>
-        </div>
-        <div class="join-flex">
-            <div class="join-width">
-                <img src="images/how2.png">
-            </div>
-            <div class="join-width">
-                <div class="inne-join">
-                    <h3>Who Could Benefit<br>
-                        From Sleepi?</h3>
-                    <h4>70% of all adults
-                    </h4>
-                    <p>- According to sleephealth.org, 70% of adults report insufficient sleep at least one night a month
-                    </p>
-                    <h4>The exhausted new parent
-                    </h4>
-                    <p>- Isn’t it your turn to sleep like a baby?
-                    </p>
-                    <h4>The athlete maximizing recovery
-                    </h4>
-                    <p>- Nothing takes athletic performance to the next level like restful, restorative sleep.
-                    </p>
-                    <h4>The mental health advocate
-                    </h4>
-                    <p>- Good sleep = good health. Sleep plays a crucial role in good mental health. </p>
+                    {% if block.settings.subheading != blank %}                        
+                        <span> {{ block.settings.subheading }} </span>
+                    {% endif %}
+                    {% if block.settings.heading != blank %}                        
+                        <h3> {{ block.settings.heading | newline_to_br }} </h3>
+                    {% endif %}
+                    {% if block.settings.text != blank %}                        
+                        <p> {{ block.settings.text }} </p>
+                    {% endif %}
+                    {% if block.settings.feature_heading_1 != blank %}                        
+                        <h4> {{ block.settings.feature_heading_1 }} </h4>
+                    {% endif %}
+                    {% if block.settings.feature_text_1 != blank %}
+                        <p> {{ block.settings.feature_text_1 }} </p>
+                    {% endif %}                    
+                    {% if block.settings.feature_heading_2 != blank %}                        
+                        <h4> {{ block.settings.feature_heading_2 }} </h4>
+                    {% endif %}
+                    {% if block.settings.feature_text_2 != blank %}
+                        <p> {{ block.settings.feature_text_2 }} </p>
+                    {% endif %}                    
+                    {% if block.settings.feature_heading_3 != blank %}                        
+                        <h4> {{ block.settings.feature_heading_3 }} </h4>
+                    {% endif %}
+                    {% if block.settings.feature_text_3 != blank %}
+                        <p> {{ block.settings.feature_text_3 }} </p>
+                    {% endif %}                    
+                    {% if block.settings.feature_heading_4 != blank %}                        
+                        <h4> {{ block.settings.feature_heading_4 }} </h4>
+                    {% endif %}
+                    {% if block.settings.feature_text_4 != blank %}
+                        <p> {{ block.settings.feature_text_4 }} </p>
+                    {% endif %}                    
+                    {% if block.settings.feature_heading_5 != blank %}                        
+                        <h4> {{ block.settings.feature_heading_5 }} </h4>
+                    {% endif %}
+                    {% if block.settings.feature_text_5 != blank %}
+                        <p> {{ block.settings.feature_text_5 }} </p>
+                    {% endif %}                    
+                    
+                    {% if section.settings.button_text != blank %}            
+                        <div class="normal-btn">
+                            <a href="{{ section.settings.button_link }}" title="{{ section.settings.button_text }}"> {{ section.settings.button_text }} </a>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </div>     
-    </section>
+    {% endfor %}
+</section>
 
 {% schema %}
     {
