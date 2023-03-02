@@ -38,3 +38,103 @@
             </div>
         </div>     
     </section>
+
+{% schema %}
+    {
+        "name": "Join",
+        "settings": [
+            {
+                "type": "text",
+                "id": "section__id",
+                "label": "Section Id",
+                "default": "how"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "item",
+                "name": "Item",
+                "settings": [
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "heading",
+                        "label": "Heading"
+                    },
+                    {
+                        "type": "text",
+                        "id": "subheading",
+                        "label": "Subheading"
+                    },
+                    {
+                        "type": "inline_richtext",
+                        "id": "text",
+                        "label": "Text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "button_text",
+                        "label": "Button Text"
+                    },{
+                        "type": "url",
+                        "id": "button_link",
+                        "label": "Button Link"
+                    },
+                    {
+                        "type": "header",
+                        "content": "Features"                      
+                    },
+                    {
+                        "type": "text",
+                        "id": "feature_heading_1",
+                        "label": "Heading"
+                    },{
+                        "type": "text",
+                        "id": "feature_text_1",
+                        "label": "Text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "feature_heading_2",
+                        "label": "Heading"
+                    },{
+                        "type": "text",
+                        "id": "feature_text_2",
+                        "label": "Text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "feature_heading_3",
+                        "label": "Heading"
+                    },{
+                        "type": "text",
+                        "id": "feature_text_3",
+                        "label": "Text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "feature_heading_4",
+                        "label": "Heading"
+                    },{
+                        "type": "text",
+                        "id": "feature_text_4",
+                        "label": "Text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "feature_heading_5",
+                        "label": "Heading"
+                    },{
+                        "type": "text",
+                        "id": "feature_text_5",
+                        "label": "Text"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}    
