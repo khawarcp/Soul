@@ -35,11 +35,6 @@
         "background_image": "shopify:\/\/shop_images\/better-banner.png"
       }
     },
-    "better-claim": {
-      "type": "better-claim",
-      "settings": {
-      }
-    },
     "better-facts": {
       "type": "better-facts",
       "blocks": {
@@ -77,6 +72,11 @@
         "button_link": ""
       }
     },
+    "better-claim": {
+      "type": "better-claim",
+      "settings": {
+      }
+    },
     "better-features": {
       "type": "better-features",
       "settings": {
@@ -99,8 +99,8 @@
   },
   "order": [
     "better-bannner",
-    "better-claim",
     "better-facts",
+    "better-claim",
     "better-features",
     "better-join",
     "better-video"
