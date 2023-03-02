@@ -96,12 +96,42 @@
       ],
       "settings": {
       }
+    },
+    "cb295b40-a0f5-4a54-87fd-d9671f1f8274": {
+      "type": "community-testimonials",
+      "blocks": {
+        "1e1fab49-1468-4bbd-8e5c-5a79031e479d": {
+          "type": "text",
+          "settings": {
+            "main-image": "shopify:\/\/shop_images\/t1.png",
+            "title": "Kelly Brady",
+            "review-date": "Oct 10",
+            "review-text": "Everyone in the Soul Wellness community shares a common interest and desire for overall wellness - sharing ideas and information, connecting with one another, and supporting each other."
+          }
+        },
+        "067b6166-7fe4-48e6-adce-ac73dde27601": {
+          "type": "text",
+          "settings": {
+            "main-image": "shopify:\/\/shop_images\/t2.png",
+            "title": "Kelly Brady",
+            "review-date": "Oct 10",
+            "review-text": "Everyone in the Soul Wellness community shares a common interest and desire for overall wellness - sharing ideas and information, connecting with one another, and supporting each other."
+          }
+        }
+      },
+      "block_order": [
+        "1e1fab49-1468-4bbd-8e5c-5a79031e479d",
+        "067b6166-7fe4-48e6-adce-ac73dde27601"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "4ed86409-3326-47ac-984e-49eb6f650a34",
     "eb0868a1-c0e0-47d0-b6e3-e0088ab17328",
-    "31df8a08-6932-40bf-a325-a3c828c228ac"
+    "31df8a08-6932-40bf-a325-a3c828c228ac",
+    "cb295b40-a0f5-4a54-87fd-d9671f1f8274"
   ]
 }
