@@ -1,28 +1,76 @@
 <section class="for-you padding-main" id="new1">
     <div class="container">
         <div class="global-heading">
-            <h2>You’re Getting Verrry Sleepi</h2>
+            <h2> {{ section.settings.heading }} </h2>
         </div>
         <div class="for-flex">
-            <div class="for-width">
-                <h4>85%</h4>
-                <p>of customers surveyed fell asleep faster when taking Sleepi</p>
-            </div>
-            <div class="for-width">
-                <h4>99%</h4>
-                <p>of customers surveyed would recommend to a friend</p>
-            </div>
-            <div class="for-width">
-                <h4>87%</h4>
-                <p>of customers surveyed woke up feeling well rested</p>
-            </div>
+            {% for block in section.blocks %}
+                {% if block.settings.value != blank %}                    
+                    <div class="for-width">
+                        <h4>85%</h4>
+                        <p>of customers surveyed fell asleep faster when taking Sleepi</p>
+                    </div>
+                {% endif %}                
+            {% endfor %}            
         </div>
+        {% if section.settings.bottom_text != blank %}            
         <div class="best-heading">
-            <h3>Your best night’s sleep ever,<br> 
-                is only one click away.</h3>
+            <h3> {{ section.settings.bottom_text }} </h3>
         </div>
+        {% endif %}
+
+        {% if section.settings.button_text != blank %}            
         <div class="primary-btn">
-            <a href="#">Redeem my offer</a>
+            <a href="{{ section.settings.button_link }}" title="{{ section.settings.button_text }}"> {{ section.settings.button_text }} </a>
         </div>
+    {% endif %}
     </div>
 </section>
+
+{% schema %}
+    {
+        "name": "Video",
+        "settings": [    
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "You’re Getting Verrry Sleepi"
+            },        
+            {
+                "type": "textarea",
+                "id": "bottom_text",
+                "label": "Text"
+            },        
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button Text",
+                "default": "start snoozing"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button Link"
+            }
+        ],
+        "blocks": [
+            {
+                "name": "Item",
+                "type": "item",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "value",
+                        "label": "Value"
+                    },
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "Text"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}
