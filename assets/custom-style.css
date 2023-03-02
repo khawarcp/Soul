@@ -6,3 +6,13 @@
 .footer-block__details-content.rte p {
     color: white;
 }
+
+.top-bar {
+    padding: 13px 0;
+    background: #023940;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
