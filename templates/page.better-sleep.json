@@ -72,18 +72,70 @@
         "button_link": ""
       }
     },
+    "better-join": {
+      "type": "better-join",
+      "blocks": {
+        "1702f191-8998-4db3-8cd5-ccf7bca2ab31": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/how1.png",
+            "heading": "How Sleepi Hacks\nYour REM",
+            "subheading": "",
+            "text": "This plant-powered sleep solution is designed to optimize every aspect of sleep. We’ve combined the naturally sedative effects of terpenes and Melatonin to help you fall asleep faster, with the powerfully calming properties of CBN (CBD’s sleepy cousin) to increase relaxation and quality of sleep, so you can doze off peacefully, without feeling off the next day.",
+            "button_text": "",
+            "button_link": "",
+            "feature_heading_1": "",
+            "feature_text_1": "",
+            "feature_heading_2": "",
+            "feature_text_2": "",
+            "feature_heading_3": "",
+            "feature_text_3": "",
+            "feature_heading_4": "",
+            "feature_text_4": "",
+            "feature_heading_5": "",
+            "feature_text_5": ""
+          }
+        },
+        "15d53b0d-6516-4226-bda0-b3a68bd36e1a": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/how2.png",
+            "heading": "Who Could Benefit\nFrom Sleepi?",
+            "subheading": "",
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "feature_heading_1": "70% of all adults",
+            "feature_text_1": "- According to sleephealth.org, 70% of adults report insufficient sleep at least one night a month",
+            "feature_heading_2": "The exhausted new parent",
+            "feature_text_2": "- Isn’t it your turn to sleep like a baby?",
+            "feature_heading_3": "The athlete maximizing recovery",
+            "feature_text_3": "- Nothing takes athletic performance to the next level like restful, restorative sleep.",
+            "feature_heading_4": "The mental health advocate",
+            "feature_text_4": "- Good sleep = good health. Sleep plays a crucial role in good mental health.",
+            "feature_heading_5": "",
+            "feature_text_5": ""
+          }
+        }
+      },
+      "block_order": [
+        "1702f191-8998-4db3-8cd5-ccf7bca2ab31",
+        "15d53b0d-6516-4226-bda0-b3a68bd36e1a"
+      ],
+      "settings": {
+        "section__id": "how"
+      }
+    },
     "better-claim": {
       "type": "better-claim",
       "settings": {
+        "text": "Claim 50% Off Before Supplies Run Out",
+        "button_text": "start snoozing",
+        "button_link": ""
       }
     },
     "better-features": {
       "type": "better-features",
-      "settings": {
-      }
-    },
-    "better-join": {
-      "type": "better-join",
       "settings": {
       }
     },
@@ -100,9 +152,9 @@
   "order": [
     "better-bannner",
     "better-facts",
+    "better-join",
     "better-claim",
     "better-features",
-    "better-join",
     "better-video"
   ]
 }
