@@ -1,8 +1,8 @@
 <section class="video padding-main">
     <div class="container">
         <div class="inner-video">
-            <a data-fancybox="" href="{{ section.settings.video_url }}">                
-                {% render 'image-card', image: section.settings.background_image %}
+            <a data-fancybox="" href="{{ section.settings.youtube_link }}">                
+                {% render 'image-card', image: section.settings.poster_image, lazy_load: true %}
             </a>
         </div>
         {% if section.settings.button_text != blank %}            
@@ -33,13 +33,10 @@
                 "label": "Poster Image"
             },
             {
-                "type": "video_url",
+                "type": "text",
                 "id": "youtube_link",
                 "label": "Youtube Link",
-                "accept": [
-                    "youtube",
-                    "vimeo"
-                ]
+                "info": "Paste the youtube link here.."
             }
         ]
     }
