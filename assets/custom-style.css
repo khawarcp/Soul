@@ -30,3 +30,7 @@ svg.modal__toggle-open.icon.icon-search {
     width: 2.4rem;
     height: 3.4rem;
 }
+
+.bottom-footer span a {
+    color: white;
+}
