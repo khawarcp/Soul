@@ -1,8 +1,8 @@
 <section class="video padding-main">
     <div class="container">
         <div class="inner-video">
-            <a data-fancybox="" href="{{ section.settings.youtube_link }}">                
-                {% render 'image-card', image: section.settings.poster_image, lazy_load: true %}
+            <a data-fancybox="" href="{{ section.settings.youtube_link }}">                                
+                <img src="{{ section.settings.poster_image | image_url }}" height="" width="" loading="lazy">
             </a>
         </div>
         {% if section.settings.button_text != blank %}            
