@@ -5,16 +5,11 @@
     "header": {
       "type": "header",
       "settings": {
-        "color_scheme": "background-1",
-        "logo_position": "middle-center",
-        "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
-        "show_line_separator": true,
-        "mobile_logo_position": "center",
-        "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "show_announcement": true,
+        "announcement_text": "Voted #1 CBD gummy for anxiety by WebMD  shop award winners",
+        "menu_1": "main-menu",
+        "menu_2": "main-menu-right",
+        "enable_search": true
       }
     }
   },
