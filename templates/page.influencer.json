@@ -1,23 +1,70 @@
 {
-    "name": "Influencer",
-    "sections": {
-        "influencer-banner":{
-            "type": "influencer-banner"
+  "sections": {
+    "influencer-banner": {
+      "type": "influencer-banner",
+      "blocks": {
+        "33e8f526-fbe4-4cc4-bea3-f7ce59464ae4": {
+          "type": "subheading_with_image",
+          "settings": {
+            "subheading": "Soul CBD x",
+            "image": "shopify:\/\/shop_images\/charlie.png"
+          }
         },
-        "influencer-functions":{
-            "type": "influencer-functions"
+        "7715382d-6f29-4073-a63d-ece2d01377e3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet Your\nBedtime Bestie"
+          }
         },
-        "influencer-image-text":{
-            "type": "influencer-image-text"
+        "21b25285-241c-4b1a-8871-45a69f507825": {
+          "type": "text",
+          "settings": {
+            "text": "Now available in two dreamy flavors! Formulated to help you fall asleep faster, stay asleep longer, and improve quality of sleep. Get 15% off with code: CHALENE15"
+          }
         },
-        "influencer-cbn":{
-            "type": "influencer-cbn"
+        "18608c4f-3970-41f0-8c6e-d8ddf0c0bfd4": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop now with 15% off",
+            "button_link": ""
+          }
         }
+      },
+      "block_order": [
+        "33e8f526-fbe4-4cc4-bea3-f7ce59464ae4",
+        "7715382d-6f29-4073-a63d-ece2d01377e3",
+        "21b25285-241c-4b1a-8871-45a69f507825",
+        "18608c4f-3970-41f0-8c6e-d8ddf0c0bfd4"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/influncer.png"
+      }
     },
-    "order": [
-        "influencer-banner",
-        "influencer-functions",
-        "influencer-image-text",
-        "influencer-cbn"
-    ]
+    "influencer-functions": {
+      "type": "influencer-functions",
+      "settings": {
+      }
+    },
+    "influencer-image-text": {
+      "type": "influencer-image-text",
+      "settings": {
+        "text": "",
+        "name": "",
+        "button_text": "try my bedtime bestie",
+        "button_link": ""
+      }
+    },
+    "influencer-cbn": {
+      "type": "influencer-cbn",
+      "settings": {
+        "heading": "The 411 on CBN"
+      }
+    }
+  },
+  "order": [
+    "influencer-banner",
+    "influencer-functions",
+    "influencer-image-text",
+    "influencer-cbn"
+  ]
 }
