@@ -14,7 +14,7 @@
                 {% if section.settings.name != blank %}                    
                     <h5 class="xo">{{ section.settings.name }}</h5>
                 {% endif %}
-                {% if section.settings.signature_image  != blank %}                    
+                {% if section.settings.signature_image != blank %}                    
                     <div class="signature">
                         <img src="{{ section.settings.signature_image | image_url: width: section.settings.signature_image.widh }}" height="" width="{{ section.settings.signature_image.widh }}" loading="lazy">
                     </div>

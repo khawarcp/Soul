@@ -13,11 +13,11 @@
                         {% endif %}
                     {% when 'heading' %}
                         {% if block.settings.heading != blank %}                            
-                            <h1> {{ block.settings.heading }} </h1>
+                            <h1> {{ block.settings.heading | newline_to_br }} </h1>
                         {% endif %}
                     {% when 'text' %}
                             {% if block.settings.text != blank %}                            
-                                <p> {{ block.settings.text }} </p>
+                                <p> {{ block.settings.text | newline_to_br }} </p>
                             {% endif %}    
                     {% when 'button' %}
                         {% if block.settings.button_text != blank %}            
@@ -95,7 +95,7 @@
                     "limit": 1,
                     "settings": [
                         {
-                            "type": "inline_richtext",
+                            "type": "textarea",
                             "id": "text",
                             "label": "Text"
                         }
