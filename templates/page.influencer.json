@@ -87,10 +87,35 @@
         "button_link": ""
       }
     },
+    "7ae55d0d-630b-4bb1-b596-b9805a9f1d6d": {
+      "type": "better-features",
+      "settings": {
+        "heading": "The Dream Team",
+        "button_text": "Taste your relief",
+        "button_link": "",
+        "background_image": "shopify:\/\/shop_images\/center-img.png",
+        "feature_heading_1": "CBN",
+        "feature_text_1": "Hemp derived cannabinol contains powerful relaxing properties known to improve the quality of REM sleep.",
+        "feature_image_1": "shopify:\/\/shop_images\/d1.png",
+        "feature_heading_2": "Myrcene",
+        "feature_text_2": "Natural aromatic compound found in plants promotes a calming, sedative effect to help you fall asleep faster.",
+        "feature_image_2": "shopify:\/\/shop_images\/d2.png",
+        "feature_heading_3": "Melatonin",
+        "feature_text_3": "Naturally occurring hormone that regulates the sleep-wake cycle, helping you fall asleep faster and stay asleep longer.",
+        "feature_image_3": "shopify:\/\/shop_images\/d3.png",
+        "feature_heading_4": "CBN",
+        "feature_text_4": "Organically grown CBD Isolate promotes sleep health by addressing the root causes of sleep issues.",
+        "feature_image_4": "shopify:\/\/shop_images\/d4.png",
+        "feature_heading_5": "Blueberry Extract",
+        "feature_text_5": "Natural flavoring from real blueberries so you can taste your relief.",
+        "feature_image_5": "shopify:\/\/shop_images\/d5.png"
+      }
+    },
     "influencer-cbn": {
       "type": "influencer-cbn",
       "settings": {
-        "heading": "The 411 on CBN"
+        "heading": "The 411 on CBN",
+        "background_image": "shopify:\/\/shop_images\/cbn.png"
       }
     }
   },
@@ -98,6 +123,7 @@
     "influencer-banner",
     "influencer-functions",
     "influencer-image-text",
+    "7ae55d0d-630b-4bb1-b596-b9805a9f1d6d",
     "influencer-cbn"
   ]
 }
