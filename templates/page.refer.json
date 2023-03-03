@@ -1,15 +1,61 @@
 {
-    "name": "Refferals",
-    "sections": {
-        "refer-banner":{
-            "type": "refer-banner"
+  "sections": {
+    "refer-banner": {
+      "type": "refer-banner",
+      "blocks": {
+        "2737b58c-0756-4ffb-b21a-68fb718a3cea": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Refer a Friend"
+          }
         },
-        "refer-discount":{
-            "type": "refer-discount"
+        "fd62c4cc-e90d-4360-ac89-380ef78b240f": {
+          "type": "heading",
+          "settings": {
+            "heading": "Give $20,\nGet $20"
+          }
+        },
+        "0bed7a5e-dbd3-4e9c-bb51-674e2dea1be9": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "Give your friends $20 off on their first order of $75+ and get $20 for each successful referral."
+          }
+        },
+        "880d9463-9d94-4903-8f2e-87029e1c3a64": {
+          "type": "text",
+          "settings": {
+            "text": "Submit your email to get started."
+          }
+        },
+        "39caf887-2b1a-4a66-8dbd-3be44f33dc8c": {
+          "type": "form",
+          "settings": {
+            "heading": "",
+            "button_link": ""
+          }
         }
+      },
+      "block_order": [
+        "2737b58c-0756-4ffb-b21a-68fb718a3cea",
+        "fd62c4cc-e90d-4360-ac89-380ef78b240f",
+        "0bed7a5e-dbd3-4e9c-bb51-674e2dea1be9",
+        "880d9463-9d94-4903-8f2e-87029e1c3a64",
+        "39caf887-2b1a-4a66-8dbd-3be44f33dc8c"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/refferal-banner.png"
+      }
     },
-    "order": [
-        "refer-banner",
-        "refer-discount"
-    ]
+    "refer-discount": {
+      "type": "refer-discount",
+      "settings": {
+        "heading": "Redeem For Discounts",
+        "subheading": "Simply apply your points for a discount at checkout!"
+      }
+    }
+  },
+  "order": [
+    "refer-banner",
+    "refer-discount"
+  ]
 }
