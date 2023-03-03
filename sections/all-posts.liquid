@@ -1,4 +1,4 @@
-
+{%- paginate blog.articles by 9 -%}
     <div class="cat-tags">
         <div class="container">
             <ul class="catagory">
@@ -20,11 +20,15 @@
                 {% for article in blog.articles %}
                       {% render 'custom-article-card', article: article %}
                 {% endfor %}
-                </div>
+              </div>
                 <!-- ======== end loop ==== -->
+                  {%- if paginate.pages > 1 -%}
+                    {%- render 'pagination', paginate: paginate -%}
+                  {%- endif -%}  
             </div>
         </div>
     </section>
+  {%- endpaginate -%}
 {% schema %}
 {
     "name": "All Blog Posts",
