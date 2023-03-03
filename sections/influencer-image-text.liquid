@@ -2,29 +2,68 @@
     <div class="try-flex">
         <div class="try-width">
             <div class="try-img">
-                <img src="images/girl.png">
+                {% render 'image-card', image: section.settings.image, lazy_load: true %}
             </div>
         </div>
         <div class="try-width">
             <div class="try-content">
-                <img src="images/try-comma.png">
-                <h5>As someone devoted to sleep health since my own 
-                    brain scare in 2015 - I had tried practically every 
-                    supplement on the market. Most didn’t work or 
-                    left me feeling cloudy in the am. After months of 
-                    working with the team at Soul I can finally say — 
-                    GOOD NIGHT! Not only do these gummies taste 
-                    delicious, but they contain the perfect amount of 
-                    CBD, melatonin, and natural botanicals to help you 
-                    get truly restorative sleep!"</h5>
-                <h5 class="xo">XOXO</h5>
-                <div class="signature">
-                    <img src="images/charlie2.png">
-                </div>
-                <div class="primary-btn">
-                    <a href="#">try my bedtime bestie</a>
-                </div>
+                <img src="{{ 'try-comma.png' | asset_url }}" height="" width="" loading="lazy">
+                {% if section.settings.text != blank %}                    
+                    <h5> {{ section.settings.text }} </h5>
+                {% endif %}
+                {% if section.settings.name != blank %}                    
+                    <h5 class="xo">{{ section.settings.name }}</h5>
+                {% endif %}
+                {% if section.settings.signature_image  != blank %}                    
+                    <div class="signature">
+                        <img src="{{ section.settings.signature_image | image_url: width: section.settings.signature_image.widh }}" height="" width="{{ section.settings.signature_image.widh }}" loading="lazy">
+                    </div>
+                {% endif %}
+                {% if section.settings.button_text != blank %}            
+                    <div class="primary-btn">
+                        <a href="{{ section.settings.button_link }}" title="{{ section.settings.button_text }}"> {{ section.settings.button_text }} </a>
+                    </div>
+                {% endif %}
             </div>
         </div>
     </div>
 </section>
+
+{% schema %}
+    {
+        "name": "Image with text",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            },
+            {
+                "type": "inline_richtext",
+                "id": "text",
+                "label": "Text"
+            },
+            {
+                "type": "text",
+                "id": "name",
+                "label": "Name"
+            },        
+            {
+                "type": "image_picker",
+                "id": "signature_image",
+                "label": "Signature Image"
+            },
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button Text",
+                "default": "try my bedtime bestie"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button Link"
+            }
+        ]
+    }
+{% endschema %}
