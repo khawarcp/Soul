@@ -208,7 +208,7 @@
       ],
       "settings": {
         "main_heading": "Redeem For Discounts",
-        "main_text": "<p>Redeeming your hard-earned points is easy! For one-time purchases, use our in-cart redemption slider.For subscription orders, select your discount amount below to redeem.<\/p>"
+        "main_text": "<p>Redeeming your hard-earned points is easy! <\/p><p>For one-time purchases, use our in-cart redemption slider.<\/p><p>For subscription orders, select your discount amount below to redeem.<\/p>"
       }
     }
   },
