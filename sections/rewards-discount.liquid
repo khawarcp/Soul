@@ -1,10 +1,14 @@
 <section class="discount padding-main">
     <div class="container">
         <div class="heading">
-            <h2>Redeem For Discounts</h2>
-            <p>Redeeming your hard-earned points is easy!<br>
-                For one-time purchases, use our in-cart redemption slider.<br>
-                For subscription orders, select your discount amount below to redeem.</p>
+          {% if section.settings.main_heading %}
+            <h2>{{ section.settings.main_heading }}</h2>
+          {% endif %}
+          {% if section.settings.main_text %}
+            <p>
+              {{ section.settings.main_text }}
+            </p>
+          {% endif %}
         </div>
         <div class="refferal-list">
             <ul>
