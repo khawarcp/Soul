@@ -34,12 +34,42 @@
     },
     "rewards-how-works": {
       "type": "rewards-how-works",
+      "blocks": {
+        "2cedf6f9-b5f3-42d8-97a3-6ecee6ce11c2": {
+          "type": "Item",
+          "settings": {
+            "heading": "Join",
+            "text": "Join Soul Rewards and start earning."
+          }
+        },
+        "5df709af-aae0-47d3-8b17-2bfd3d713e12": {
+          "type": "Item",
+          "settings": {
+            "heading": "Earn",
+            "text": "Earn points every time you shop."
+          }
+        },
+        "55e575ef-6776-42b5-a1f8-40eb1189690d": {
+          "type": "Item",
+          "settings": {
+            "heading": "Redeem",
+            "text": "Redeem points for exclusive discounts."
+          }
+        }
+      },
+      "block_order": [
+        "2cedf6f9-b5f3-42d8-97a3-6ecee6ce11c2",
+        "5df709af-aae0-47d3-8b17-2bfd3d713e12",
+        "55e575ef-6776-42b5-a1f8-40eb1189690d"
+      ],
       "settings": {
+        "heading": "How it works"
       }
     },
     "rewards-way-earn": {
       "type": "rewards-way-earn",
       "settings": {
+        "heading": "Way To Earn Points"
       }
     },
     "rewards-discount": {
