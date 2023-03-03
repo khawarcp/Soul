@@ -1,23 +1,56 @@
 {
-    "name": "Rewards",
-    "sections": {
-        "rewards-banner":{
-            "type": "rewards-banner"
+  "sections": {
+    "rewards-banner": {
+      "type": "rewards-banner",
+      "blocks": {
+        "736e69f4-decb-4705-8678-30912d43bfdb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rewards"
+          }
         },
-        "rewards-how-works":{
-            "type": "rewards-how-works"
+        "51e89d91-d13d-41b3-9e94-2f4f695f4c7c": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "As a member you'll get closer to earning exclusive rewards every time you shop."
+          }
         },
-        "rewards-way-earn":{
-            "type": "rewards-way-earn"
-        },
-        "rewards-discount":{
-            "type": "rewards-discount"
+        "436862da-31eb-4345-9a80-50e1e6d37587": {
+          "type": "button",
+          "settings": {
+            "button_text": "Sign up",
+            "button_link": ""
+          }
         }
+      },
+      "block_order": [
+        "736e69f4-decb-4705-8678-30912d43bfdb",
+        "51e89d91-d13d-41b3-9e94-2f4f695f4c7c",
+        "436862da-31eb-4345-9a80-50e1e6d37587"
+      ],
+      "settings": {
+      }
     },
-    "order": [
-        "rewards-banner",
-        "rewards-how-works",
-        "rewards-way-earn",
-        "rewards-discount"
-    ]
+    "rewards-how-works": {
+      "type": "rewards-how-works",
+      "settings": {
+      }
+    },
+    "rewards-way-earn": {
+      "type": "rewards-way-earn",
+      "settings": {
+      }
+    },
+    "rewards-discount": {
+      "type": "rewards-discount",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "rewards-banner",
+    "rewards-how-works",
+    "rewards-way-earn",
+    "rewards-discount"
+  ]
 }
