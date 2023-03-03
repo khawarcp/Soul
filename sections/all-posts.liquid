@@ -26,15 +26,22 @@
         </div>
     </section>
 {% schema %}
-  {
+{
     "name": "All Blog Posts",
-    "settings": [],
+    "settings": [
+        {
+            "type": "checkbox",
+            "label": "Shoow Tags",
+            "id": "show_tags",
+            "default": true
+        }
+    ],
     "presets": [
       {
         "name": "All Blog Posts"
       }
     ]
-  }
+}
 {% endschema %}
 
 {% stylesheet %}
