@@ -1,63 +1,54 @@
 <section class="wayToEarn">
     <div class="container">
-        <h2>Way To Earn Points</h2>
+        {% if section.settings.heading != blank %}
+                <h2> {{ section.settings.heading }} </h2>                
+        {% endif %}
         <ul>
-            <li>
-                <img src="./images/rewards2.png" alt="">
-                <div class="contentWrapper">
-                    <h5>25 points</h5>
-                    <p>Visit our Facebook page</p>
-                </div>
-            </li>
-            <li>
-                <img src="./images/rewards2.png" alt="">
-                <div class="contentWrapper">
-                    <h5>25 points</h5>
-                    <p>Visit our Facebook page</p>
-                </div>
-            </li>
-            <li>
-                <img src="./images/rewards2.png" alt="">
-                <div class="contentWrapper">
-                    <h5>25 points</h5>
-                    <p>Visit our Facebook page</p>
-                </div>
-            </li>
-            <li>
-                <img src="./images/rewards2.png" alt="">
-                <div class="contentWrapper">
-                    <h5>25 points</h5>
-                    <p>Visit our Facebook page</p>
-                </div>
-            </li>
-            <li>
-                <img src="./images/rewards2.png" alt="">
-                <div class="contentWrapper">
-                    <h5>25 points</h5>
-                    <p>Visit our Facebook page</p>
-                </div>
-            </li>
-            <li>
-                <img src="./images/rewards2.png" alt="">
-                <div class="contentWrapper">
-                    <h5>25 points</h5>
-                    <p>Visit our Facebook page</p>
-                </div>
-            </li>
-            <li>
-                <img src="./images/rewards2.png" alt="">
-                <div class="contentWrapper">
-                    <h5>25 points</h5>
-                    <p>Visit our Facebook page</p>
-                </div>
-            </li>
-            <li>
-                <img src="./images/rewards2.png" alt="">
-                <div class="contentWrapper">
-                    <h5>25 points</h5>
-                    <p>Visit our Facebook page</p>
-                </div>
-            </li>
+            {% for block in section.blocks %}                
+                <li>
+                    {% render 'image-card', image: block.settings.image, lazy_load: true %}
+                    <div class="contentWrapper">
+                        <h5> {{ block.settings.text }} </h5>
+                        <p> {{ block.settings.subtext }} </p>
+                    </div>
+                </li>
+            {% endfor %}          
         </ul>
     </div>
 </section>
+
+{% schema %}
+    {
+        "name": "Discounts",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Way To Earn Points"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "Item",
+                "name": "Item",                
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "text",
+                        "label": "Text"
+                    },
+                    {
+                        "type": "text",
+                        "id": "subtext",
+                        "label": "Subtext"
+                    },{
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    }
+                ]
+            }
+        ]
+    }
+{% endschema %}
