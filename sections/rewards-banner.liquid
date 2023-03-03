@@ -1,0 +1,79 @@
+<section class="bannerSection" loading="lazy" style="background-image: url({{ section.settings.background_image | image_url }});">
+<div class="containerBannerSection">
+    {% for block in section.blocks %}
+        {% case block.type %}
+            {% when 'heading' %}
+                {% if block.settings.heading != blank %}                            
+                    <h1> {{ block.settings.heading | newline_to_br }} </h1>
+                {% endif %}  
+            {% when 'richtext' %}
+                    {% if block.settings.richtext != blank %}                            
+                        <p> {{ block.settings.richtext }} </p>
+                    {% endif %}    
+            {% when 'button' %}
+                {% if block.settings.button_text != blank %}            
+                <a href="{{ block.settings.button_link }}" title="{{ block.settings.button_text }}"> {{ block.settings.button_text }} </a>                
+            {% endif %}                           
+        {% endcase %}
+    {% endfor %}
+</div>
+</section>
+
+{% schema %}
+    {
+        "name": "Banner",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "background_image",
+                "label": "Background Image"
+            }
+        ],
+        "blocks": [
+                {
+                    "type": "heading",
+                    "name": "Heading",
+                    "limit": 1,
+                    "settings": [
+                        {
+                            "type": "textarea",
+                            "id": "heading",
+                            "label": "Text",
+                            "default": "Rewards"
+                        }
+                    ]
+                },
+                {
+                    "type": "richtext",
+                    "name": "Richtext",
+                    "limit": 1,
+                    "settings": [
+                        {
+                            "type": "inline_richtext",
+                            "id": "richtext",
+                            "label": "Text",
+                            "default": "As a member you'll get closer to earning exclusive rewards every time you shop."
+                        }
+                    ]
+                },
+                {
+                    "type": "button",
+                    "name": "Button",
+                    "limit": 1,
+                    "settings": [
+                        {
+                            "type": "text",
+                            "id": "button_text",
+                            "label": "Button Text",
+                            "default": "Sign up"
+                        },
+                        {
+                            "type": "url",
+                            "id": "button_link",
+                            "label": "Button Link"
+                        }
+                    ]
+                }         
+            ]
+    }
+{% endschema %}
