@@ -19,7 +19,7 @@
         "21b25285-241c-4b1a-8871-45a69f507825": {
           "type": "text",
           "settings": {
-            "text": "Now available in two dreamy flavors! Formulated to help you fall asleep faster, stay asleep longer, and improve quality of sleep. Get 15% off with code: CHALENE15"
+            "text": "Now available in two dreamy flavors! Formulated to help you fall asleep faster, stay asleep longer, and improve quality of sleep. Get 15% off with code: \nCHALENE15"
           }
         },
         "18608c4f-3970-41f0-8c6e-d8ddf0c0bfd4": {
@@ -42,6 +42,37 @@
     },
     "influencer-functions": {
       "type": "influencer-functions",
+      "blocks": {
+        "2747f50f-ec8f-4f82-8795-047aea8585ab": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/meet1.png",
+            "heading": "Calm Your Mind",
+            "subtext": "Easily power down after a long day and let your mind be gently rocked to sleep."
+          }
+        },
+        "f7f6f8fa-1a7b-4b3b-9920-fd3bfd1be04c": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/meet2.png",
+            "heading": "Quality Sleep",
+            "subtext": "Enjoy deep, restful sleep with a plant-based sleep solution that supports your natural circadian rhythm."
+          }
+        },
+        "af5a75d6-9bb1-4335-be7a-1c486ed98dd0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/meet3.png",
+            "heading": "Tasty Relief",
+            "subtext": "Flavored with real blueberry extract - because sleep should taste delicious."
+          }
+        }
+      },
+      "block_order": [
+        "2747f50f-ec8f-4f82-8795-047aea8585ab",
+        "f7f6f8fa-1a7b-4b3b-9920-fd3bfd1be04c",
+        "af5a75d6-9bb1-4335-be7a-1c486ed98dd0"
+      ],
       "settings": {
       }
     },
