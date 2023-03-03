@@ -48,6 +48,42 @@
     },
     "refer-discount": {
       "type": "refer-discount",
+      "blocks": {
+        "affedbc6-e0e9-4cc6-bf36-e40f95c4fd8c": {
+          "type": "discount",
+          "settings": {
+            "value": "$5 <span> OFF <\/span>",
+            "points": "50 points"
+          }
+        },
+        "07815bd6-b188-426d-9bae-d4a280580e0b": {
+          "type": "discount",
+          "settings": {
+            "value": "$5  <span>OFF<\/span>",
+            "points": "50 Points"
+          }
+        },
+        "872e4f5b-ee0f-40ed-81fb-4c1fa6ca7904": {
+          "type": "discount",
+          "settings": {
+            "value": "$5  <span>  OFF <\/span>",
+            "points": "50 Points"
+          }
+        },
+        "c84d141d-27f5-4677-90d4-a9dfbb3c953f": {
+          "type": "discount",
+          "settings": {
+            "value": "$5 <span> OFF <\/span>",
+            "points": "50 Points"
+          }
+        }
+      },
+      "block_order": [
+        "affedbc6-e0e9-4cc6-bf36-e40f95c4fd8c",
+        "07815bd6-b188-426d-9bae-d4a280580e0b",
+        "872e4f5b-ee0f-40ed-81fb-4c1fa6ca7904",
+        "c84d141d-27f5-4677-90d4-a9dfbb3c953f"
+      ],
       "settings": {
         "heading": "Redeem For Discounts",
         "subheading": "Simply apply your points for a discount at checkout!"
