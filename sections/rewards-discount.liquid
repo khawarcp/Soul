@@ -77,3 +77,66 @@
         </div>
     </div>
 </section>
+{% schema %}
+{
+  "name": "Rewards Discount",
+  "settings": [
+      {
+          "type": "text",
+          "label": "Main Heading",
+          "id": "main_heading"
+      },
+      {
+          "type": "richtext",
+          "label": "Main Text",
+          "id": "main_text"
+      }
+  ],
+  "blocks": [
+      {
+          "type": "text",
+          "name": "Point",
+          "limit": 4,
+          "settings": [
+              {
+                  "type": "text",
+                  "label": "Price",
+                  "id": "title"
+              },
+              {
+                  "type": "text",
+                  "label": "Points",
+                  "id": "points"
+              }
+          ]
+      },
+      {
+          "type": "card",
+          "name": "Card",
+          "limit": 2,
+          "settings": [
+              {
+                  "type": "text",
+                  "label": "Title",
+                  "id": "title"
+              },
+              {
+                  "type": "richtext",
+                  "label": "Text",
+                  "id": "para-text"
+              },
+              {
+                  "type": "text",
+                  "label": "Button Text",
+                  "id": "button-text"
+              },
+              {
+                  "type": "text",
+                  "label": "Button URL",
+                  "id": "button-link"
+              }
+          ]
+      }
+  ]
+}
+{% endschema %}
