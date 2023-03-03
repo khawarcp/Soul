@@ -3,7 +3,7 @@
         <div class="refferal-inner">
             {% for block in section.blocks %}
                 {% case block.type %}
-                    {% when 'subheading' %}
+                    {% when 'subheading_with_image' %}
                         {% if block.settings.subheading != blank %}                            
                             <h5> {{ block.settings.subheading }}  
                                 {% if block.settings.image != blank %}                                    
