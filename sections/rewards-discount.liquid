@@ -4,7 +4,7 @@
           {% if section.settings.main_heading %}
             <h2>{{ section.settings.main_heading }}</h2>
           {% endif %}
-          {% if section.settings.main_text %}
+          {% if section.settings.main_text != blank %}
             <p>
               {{ section.settings.main_text }}
             </p>
