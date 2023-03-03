@@ -150,7 +150,55 @@
     },
     "rewards-discount": {
       "type": "rewards-discount",
+      "blocks": {
+        "ce886527-2d6e-4e5c-8288-2df62c848ed2": {
+          "type": "text",
+          "settings": {
+            "title": "$5",
+            "points": "50 points"
+          }
+        },
+        "f1cbd245-effe-4e15-85e6-f54ec49fbad9": {
+          "type": "text",
+          "settings": {
+            "title": "$10",
+            "points": "100 points"
+          }
+        },
+        "26bd077b-8185-467c-952e-091a22817141": {
+          "type": "text",
+          "settings": {
+            "title": "$25",
+            "points": "250 points"
+          }
+        },
+        "e278a924-be61-4210-9638-9c74d0e836db": {
+          "type": "text",
+          "settings": {
+            "title": "$50",
+            "points": "500 points"
+          }
+        },
+        "44570197-a969-48dc-90c2-a3c997b341c5": {
+          "type": "card",
+          "settings": {
+            "title": "New Order",
+            "para-text": "<p>Choose your discount reward in your cart during checkout.<\/p>",
+            "button-text": "Learn More",
+            "button-link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "ce886527-2d6e-4e5c-8288-2df62c848ed2",
+        "f1cbd245-effe-4e15-85e6-f54ec49fbad9",
+        "26bd077b-8185-467c-952e-091a22817141",
+        "e278a924-be61-4210-9638-9c74d0e836db",
+        "44570197-a969-48dc-90c2-a3c997b341c5"
+      ],
       "settings": {
+        "main_heading": "Redeem For Discounts",
+        "main_text": "<p>Redeeming your hard-earned points is easy! For one-time purchases, use our in-cart redemption slider.For subscription orders, select your discount amount below to redeem.<\/p>"
       }
     }
   },
