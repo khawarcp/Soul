@@ -79,8 +79,10 @@
     "influencer-image-text": {
       "type": "influencer-image-text",
       "settings": {
-        "text": "",
-        "name": "",
+        "image": "shopify:\/\/shop_images\/girl.png",
+        "text": "As someone devoted to sleep health since my own brain scare in 2015 - I had tried practically every supplement on the market. Most didn’t work or left me feeling cloudy in the am. After months of working with the team at Soul I can finally say — GOOD NIGHT! Not only do these gummies taste delicious, but they contain the perfect amount of CBD, melatonin, and natural botanicals to help you get truly restorative sleep!",
+        "name": "XOXO",
+        "signature_image": "shopify:\/\/shop_images\/charlie2.png",
         "button_text": "try my bedtime bestie",
         "button_link": ""
       }
