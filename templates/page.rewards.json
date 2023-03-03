@@ -1,0 +1,23 @@
+{
+    "name": "Rewards",
+    "sections": {
+        "rewards-banner":{
+            "type": "rewards-banner"
+        },
+        "rewards-how-works":{
+            "type": "rewards-how-works"
+        },
+        "rewards-way-earn":{
+            "type": "rewards-way-earn"
+        },
+        "rewards-discount":{
+            "type": "rewards-discount"
+        }
+    },
+    "order": [
+        "rewards-banner",
+        "rewards-how-works",
+        "rewards-way-earn",
+        "rewards-discount"
+    ]
+}
