@@ -1,0 +1,15 @@
+{
+    "name": "Refferals",
+    "sections": {
+        "refer-banner":{
+            "type": "refer-banner"
+        },
+        "refer-discount":{
+            "type": "refer-discount"
+        }
+    },
+    "order": [
+        "refer-banner",
+        "refer-discount"
+    ]
+}
