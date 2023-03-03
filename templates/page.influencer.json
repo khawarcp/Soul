@@ -1,0 +1,23 @@
+{
+    "name": "Influencer",
+    "sections": {
+        "influencer-banner":{
+            "type": "influencer-banner"
+        },
+        "influencer-functions":{
+            "type": "influencer-functions"
+        },
+        "influencer-image-text":{
+            "type": "influencer-image-text"
+        },
+        "influencer-cbn":{
+            "type": "influencer-cbn"
+        }
+    },
+    "order": [
+        "influencer-banner",
+        "influencer-functions",
+        "influencer-image-text",
+        "influencer-cbn"
+    ]
+}

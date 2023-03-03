@@ -1,4 +1,4 @@
-<section class="team" style="background-image: url(images/center-img.png);">
+<section class="team" loading="lazy" style="background-image: url({{ section.settings.background_image | image_url }});">
     <div class="container">
         <div class="inner-headng">
             {% if section.settings.heading != blank %}                
@@ -176,6 +176,11 @@
                 "type": "image_picker",
                 "id": "feature_image_5",
                 "label": "Image"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Better Features Section"
             }
         ]
     }

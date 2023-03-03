@@ -1,0 +1,33 @@
+<section class="cbn padding-main" loading="lazy" style="background-image:url({{ section.settings.background_image | image_url }})">
+    <div class="container">
+        <div class="cbn-flex">
+            <div class="cbn-width">
+                <div class="cbn-inner">
+                    {% if section.settings.heading != blank %}                        
+                        <h2>{{ section.settings.heading }} </h2>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="cbn-width"></div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+    {
+        "name" : "CBN",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "The 411 on CBN"
+            },
+            {
+                "type": "image_picker",
+                "id": "background_image",
+                "label": "Background Image"
+            }
+        ]
+    }
+{% endschema %}
