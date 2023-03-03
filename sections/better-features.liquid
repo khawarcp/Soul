@@ -1,61 +1,182 @@
 <section class="team" style="background-image: url(images/center-img.png);">
-<div class="container">
-    <div class="inner-headng">
-        <h2>The Dream Team</h2>
-        <div class="normal-btn">
-            <a href="#">Taste your relief
-            </a>
+    <div class="container">
+        <div class="inner-headng">
+            {% if section.settings.heading != blank %}                
+                <h2> {{ section.settings.heading }} </h2>            
+            {% endif %}
+            {% if section.settings.button_text != blank %}            
+            <div class="normal-btn">
+                <a href="{{ section.settings.button_link }}" title="{{ section.settings.button_text }}"> {{ section.settings.button_text }} </a>
+            </div>
+        {% endif %}
+        </div>
+        <div class="dream-flex">
+            <div class="dream-width">
+                <div class="icon-img">
+                    {% render 'image-card', image: section.settings.feature_image_1, lazy_load: true %}
+                </div>
+                <div class="dream-des">
+                {% if section.settings.feature_heading_1 != blank %}                    
+                    <h5> {{ section.settings.feature_heading_1 }} </h5>
+                {% endif %}
+                {% if section.settings.feature_text_1 != blank %}                       
+                    <p>{{ section.settings.feature_text_1 }} </p>
+                {% endif %}
+                </div>
+            </div>
+            <div class="dream-width">
+                <div class="icon-img">
+                    {% render 'image-card', image: section.settings.feature_image_2, lazy_load: true %}
+                </div>
+                <div class="dream-des">
+                {% if section.settings.feature_heading_2 != blank %}                    
+                    <h5> {{ section.settings.feature_heading_2 }} </h5>
+                {% endif %}
+                {% if section.settings.feature_text_2 != blank %}                       
+                    <p>{{ section.settings.feature_text_2 }} </p>
+                {% endif %}
+                </div>
+            </div>
+            <div class="dream-width">
+                <div class="icon-img">
+                    {% render 'image-card', image: section.settings.feature_image_4, lazy_load: true %}
+                </div>
+                <div class="dream-des">
+                {% if section.settings.feature_heading_4 != blank %}                    
+                    <h5> {{ section.settings.feature_heading_4 }} </h5>
+                {% endif %}
+                {% if section.settings.feature_text_4 != blank %}                       
+                    <p>{{ section.settings.feature_text_4 }} </p>
+                {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="dream-flex2">
+            <div class="dream-width2">
+                <div class="icon-img">
+                    {% render 'image-card', image: section.settings.feature_image_4, lazy_load: true %}
+                </div>
+                <div class="dream-des">
+                {% if section.settings.feature_heading_4 != blank %}                    
+                    <h5> {{ section.settings.feature_heading_4 }} </h5>
+                {% endif %}
+                {% if section.settings.feature_text_4 != blank %}                       
+                    <p>{{ section.settings.feature_text_4 }} </p>
+                {% endif %}
+                </div>
+            </div>
+            <div class="dream-width2">
+                <div class="icon-img">
+                    {% render 'image-card', image: section.settings.feature_image_5, lazy_load: true %}
+                </div>
+                <div class="dream-des">
+                {% if section.settings.feature_heading_5 != blank %}                    
+                    <h5> {{ section.settings.feature_heading_5 }} </h5>
+                {% endif %}
+                {% if section.settings.feature_text_5 != blank %}                       
+                    <p>{{ section.settings.feature_text_5 }} </p>
+                {% endif %}
+                </div>
+            </div>
         </div>
     </div>
-    <div class="dream-flex">
-        <div class="dream-width">
-            <div class="icon-img">
-                <img src="images/d1.png">
-            </div>
-            <div class="dream-des">
-            <h5>CBN</h5>
-            <p>Hemp derived cannabinol contains powerful relaxing properties known to improve the quality of REM sleep. </p>
-            </div>
-        </div>
-        <div class="dream-width">
-            <div class="icon-img">
-                <img src="images/d2.png">
-            </div>
-            <div class="dream-des">
-            <h5>Myrcene</h5>
-            <p>Natural aromatic compound found in plants promotes a calming, sedative effect to help you fall asleep faster.  </p>
-            </div>
-        </div>
-        <div class="dream-width">
-            <div class="icon-img">
-                <img src="images/d3.png">
-            </div>
-            <div class="dream-des">
-            <h5>Melatonin
-            </h5>
-            <p>Naturally occurring hormone that regulates the sleep-wake cycle, helping you fall asleep faster and stay asleep longer.  </p>
-            </div>
-        </div>
-    </div>
-    <div class="dream-flex2">
-        <div class="dream-width2">
-            <div class="icon-img">
-                <img src="images/d4.png">
-            </div>
-            <div class="dream-des">
-            <h5>CBN</h5>
-            <p>Organically grown CBD Isolate promotes sleep health by addressing the root causes of sleep issues.  </p>
-            </div>
-        </div>
-        <div class="dream-width2">
-            <div class="icon-img">
-                <img src="images/d5.png">
-            </div>
-            <div class="dream-des">
-            <h5>Blueberry Extract</h5>
-            <p>Natural flavoring from real blueberries so you can taste your relief.  </p>
-            </div>
-        </div>
-    </div>
-</div>
 </section>
+
+{% schema %}
+    {
+        "name": "Features",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "The Dream Team"
+            },        
+            {
+                "type": "text",
+                "id": "button_text",
+                "label": "Button Text",
+                "default": "Taste your relief"
+            },
+            {
+                "type": "url",
+                "id": "button_link",
+                "label": "Button Link"
+            },
+            {
+                "type": "image_picker",
+                "id": "background_image",
+                "label": "Background Image"
+            },
+            {
+                "type": "header",
+                "content": "Features"                      
+            },
+            {
+                "type": "text",
+                "id": "feature_heading_1",
+                "label": "Heading"
+            },{
+                "type": "text",
+                "id": "feature_text_1",
+                "label": "Text"
+            },{
+                "type": "image_picker",
+                "id": "feature_image_1",
+                "label": "Image"
+            },
+            {
+                "type": "text",
+                "id": "feature_heading_2",
+                "label": "Heading"
+            },{
+                "type": "text",
+                "id": "feature_text_2",
+                "label": "Text"
+            },{
+                "type": "image_picker",
+                "id": "feature_image_2",
+                "label": "Image"
+            },
+            {
+                "type": "text",
+                "id": "feature_heading_3",
+                "label": "Heading"
+            },{
+                "type": "text",
+                "id": "feature_text_3",
+                "label": "Text"
+            },{
+                "type": "image_picker",
+                "id": "feature_image_3",
+                "label": "Image"
+            },
+            {
+                "type": "text",
+                "id": "feature_heading_4",
+                "label": "Heading"
+            },{
+                "type": "text",
+                "id": "feature_text_4",
+                "label": "Text"
+            },{
+                "type": "image_picker",
+                "id": "feature_image_4",
+                "label": "Image"
+            },
+            {
+                "type": "text",
+                "id": "feature_heading_5",
+                "label": "Heading"
+            },{
+                "type": "text",
+                "id": "feature_text_5",
+                "label": "Text"
+            },{
+                "type": "image_picker",
+                "id": "feature_image_5",
+                "label": "Image"
+            }
+        ]
+    }
+{% endschema %}
