@@ -187,6 +187,15 @@
             "button-text": "Learn More",
             "button-link": "#"
           }
+        },
+        "1c668f76-e6bc-4dba-8d37-154435165dbb": {
+          "type": "card",
+          "settings": {
+            "title": "Existing Subscription Orders",
+            "para-text": "<p>Click on any redemption option above, copy the code, apply it via the Apply Discount Code link in the Subscription section of your Account<\/p>",
+            "button-text": "Learn More",
+            "button-link": "#"
+          }
         }
       },
       "block_order": [
@@ -194,7 +203,8 @@
         "f1cbd245-effe-4e15-85e6-f54ec49fbad9",
         "26bd077b-8185-467c-952e-091a22817141",
         "e278a924-be61-4210-9638-9c74d0e836db",
-        "44570197-a969-48dc-90c2-a3c997b341c5"
+        "44570197-a969-48dc-90c2-a3c997b341c5",
+        "1c668f76-e6bc-4dba-8d37-154435165dbb"
       ],
       "settings": {
         "main_heading": "Redeem For Discounts",
