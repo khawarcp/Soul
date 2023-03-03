@@ -68,6 +68,82 @@
     },
     "rewards-way-earn": {
       "type": "rewards-way-earn",
+      "blocks": {
+        "e8c7b5f0-15d7-416b-8120-db0742874697": {
+          "type": "Item",
+          "settings": {
+            "text": "25 points",
+            "subtext": "Visit our Facebook page",
+            "image": "shopify:\/\/shop_images\/rewards2.png"
+          }
+        },
+        "0c34fb6c-8ea1-41b3-8505-42567657ce14": {
+          "type": "Item",
+          "settings": {
+            "text": "25 points",
+            "subtext": "Visit our Facebook page",
+            "image": "shopify:\/\/shop_images\/rewards2.png"
+          }
+        },
+        "0a9ef7f1-8620-439e-aac2-0707b343e9c5": {
+          "type": "Item",
+          "settings": {
+            "text": "25 points",
+            "subtext": "Visit our Facebook page",
+            "image": "shopify:\/\/shop_images\/rewards2.png"
+          }
+        },
+        "635bfdd4-6ad1-4cd4-8fbf-b83fd009f326": {
+          "type": "Item",
+          "settings": {
+            "text": "25 points",
+            "subtext": "Visit our Facebook page",
+            "image": "shopify:\/\/shop_images\/rewards2.png"
+          }
+        },
+        "4177b200-19da-4be6-b3e8-844e2897b414": {
+          "type": "Item",
+          "settings": {
+            "text": "25 points",
+            "subtext": "Visit our Facebook page",
+            "image": "shopify:\/\/shop_images\/rewards2.png"
+          }
+        },
+        "7dc6d407-d676-4ff0-a38e-5158d5a476ec": {
+          "type": "Item",
+          "settings": {
+            "text": "25 points",
+            "subtext": "Visit our Facebook page",
+            "image": "shopify:\/\/shop_images\/rewards2.png"
+          }
+        },
+        "7360ca40-8213-4af2-b574-bd483f4980a4": {
+          "type": "Item",
+          "settings": {
+            "text": "25 points",
+            "subtext": "Visit our Facebook page",
+            "image": "shopify:\/\/shop_images\/rewards2.png"
+          }
+        },
+        "b08116da-1d50-4a27-8c44-5a50d7cd091f": {
+          "type": "Item",
+          "settings": {
+            "text": "25 points",
+            "subtext": "Visit our Facebook page",
+            "image": "shopify:\/\/shop_images\/rewards2.png"
+          }
+        }
+      },
+      "block_order": [
+        "e8c7b5f0-15d7-416b-8120-db0742874697",
+        "0c34fb6c-8ea1-41b3-8505-42567657ce14",
+        "0a9ef7f1-8620-439e-aac2-0707b343e9c5",
+        "635bfdd4-6ad1-4cd4-8fbf-b83fd009f326",
+        "4177b200-19da-4be6-b3e8-844e2897b414",
+        "7dc6d407-d676-4ff0-a38e-5158d5a476ec",
+        "7360ca40-8213-4af2-b574-bd483f4980a4",
+        "b08116da-1d50-4a27-8c44-5a50d7cd091f"
+      ],
       "settings": {
         "heading": "Way To Earn Points"
       }
