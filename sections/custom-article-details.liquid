@@ -4,7 +4,9 @@
             <div class="detail-width">
                 <h1>{{ article.title | escape }}</h1>
                 <div class="bl-detail">
-                    <img src="images/detail1.png">
+                  {% if article.image != blank %}
+                    <img src="{{ article.image.src | img_url: 'master' }}">
+                  {% endif %}
                 </div>
                 <div class="detail-content">
                     <p>You see a cute puppy video on Instagram &amp; burst into tears, yell at your boyfriend for leaving the toilet seat up, and feel like devouring an entire pint of cookies &amp; cream. Then your period starts and everything makes sense. “Ohh I was PMS’ing!” You say, and then go about your week. What if we  told you that you didn’t have to experience such extreme mood fluctuations every month?&nbsp;</p>
